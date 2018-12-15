@@ -11,4 +11,3 @@ Men have got to understand that it’s over! Women are ruined! And can only brin
 
 Why do men endlessly try to understand what is irrational? what is depraved and abusive? what does one do in the presence of a mad individual? Does one try to come up with a clever way to convince, negotiate? women have become terrorists! One can’t conduct any negotiation with severely mentally unstable individuals. Get a dog, a doll, get a hobby. Make peace with the implacable reality that our females have lost their minds!
 
-[*source*](https://www.mgtow.com/forums/topic/ignore-rape-in-new-york-times/)
