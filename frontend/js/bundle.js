@@ -21,7 +21,7 @@ $(document).ready(function () {
 
         page.not($this).animate({ // animate your right div
             scrollTop: 0 // to the position of the target 
-        }, 100);
+        }, 500);
 
 
         page.each(function (i) {

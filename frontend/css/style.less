@@ -5,7 +5,7 @@
 // + PALETTE
 // +---------------------------------------------------------------
 @white: #FFFFFF;
-@black: #1A2029;
+@black: #000;
 @grey: #999999;
 
 
@@ -50,7 +50,7 @@ body {
 }
 
 body {
-    background: @black;
+    background: @white;
     font-size: 17px;
     line-height: 23px;
     font-family: @text;
@@ -127,17 +127,27 @@ body {
     &.is-end {
         background: @black;
         color: @white;
-        transition: opacity @ease;
+
+        * {
+            transition: opacity @ease;
+        }
+
+
 
         &:hover {
             transform: none !important;
-            opacity: 0.6;
+
+            & > * {
+                opacity: 0.6;
+            }
         }
 
         &.is-active {
             &:hover {
-                transform: none !important;
-                opacity: 1;
+                & > * {
+                    transform: none !important;
+                    opacity: 1;
+                }
             }
 
         }
@@ -295,10 +305,7 @@ body {
             align-content: center;
             align-items: center;
             justify-content: flex-start;
-            text-transform: uppercase;
-            letter-spacing: 2px;
             font-family: @title;
-            font-weight: 500;
 
         }
     }
@@ -336,6 +343,7 @@ body {
             min-height: auto;
             font-size: 1.3rem;
             line-height: 1.45em;
+            padding-bottom: 50px;
         }
     }
 
