@@ -1,0 +1,14 @@
+title: The Anti·Feminist Manifesto
+
+collections:
+  pages:
+    output: true
+    permalink: /:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+    output: false
+    is_page: false

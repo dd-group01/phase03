@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+
+    <section class="front page is-active">
+        <div class="front_rotate  hide">
+            <div class="front_rotate_title">
+                {{ site.title }}
+            </div>
+        </div>
+        <div class="front_title">
+            <div class="module">
+                {{ site.title }}
+            </div>
+        </div>
+
+
+        <div class="front_content">
+            <div class="module">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+
+
+    {% for page in site.pages %}
+
+    <section class="page n{{page.number}}" data-number="{{page.number}}">
+
+        <div class="page_content">
+            <div class="module">
+
+                <div class="page_title">
+                    {{ page.title }}
+                </div>
+
+                <div class="page_cover">
+                    <img src="{{page.cover | relative_url }}" />
+                </div>
+
+                <div class="page_text">
+                    {{page.content}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page_number">
+            .{{ page.number }}
+        </div>
+
+
+    </section>
+    {% endfor %}
+
+    <section class="page n6 is-end" data-number="6">
+        <div class="page_content">
+            <div class="module">
+
+
+            </div>
+
+        </div>
+
+        <div class="page_number">
+            *
+        </div>
+
+
+    </section>
+
+
+    {% include footer.html %}
+</body>
+
+</html>
