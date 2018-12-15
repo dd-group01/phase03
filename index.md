@@ -1,5 +1,10 @@
 ---
 layout: default
 ---
+This website is a new platform to understand, embrace and join the anti-feminist movement.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The ideology that today’s feminism brings to the attention is a constant complaining about manspreading and mansplaining, that pushes to one and only message: “Men are evil, broken and wrong”.
+
+In a society which increasingly lacks a positive identity for men, feminism carries out a sexual strategy through which women want to create a matriarchal society, covering it up as a demand of equality.
+
+**Don't be a mangina: follow the 5 steps to make sure women didn't brainwash you.**

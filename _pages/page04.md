@@ -2,6 +2,7 @@
 title: All women are sluts*
 cover: 
 number: 4
+layout: default
 ---
 
 Women? They sell pussy, problem solved.

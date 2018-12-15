@@ -2,13 +2,18 @@ title: The Anti·Feminist Manifesto
 
 collections:
   pages:
-    output: true
-    permalink: /:title
+    output: false
+    permalink: /:path
+    layout: "redirect"
+
 
 defaults:
-  - scope:
-      path: ""
-      type: "pages"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
     values:
-    output: false
-    is_page: false
+      layout: "default"
+      output: true
+      is_page: true
+      

@@ -2,6 +2,7 @@
 title: All women are hysterical*
 cover: /frontend/img/cover/01.png
 number: 1
+layout: default
 ---
 
 ### Don't argue with women, bro

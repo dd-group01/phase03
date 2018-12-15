@@ -18,7 +18,7 @@
 // +---------------------------------------------------------------
 // + VARIABLES
 // +---------------------------------------------------------------
-@text: 'aktiv-grotesk', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@text: 'freight-text-pro', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 @title: 'aktiv-grotesk-extended', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 @desktop: ~ "only screen and (min-width: 587px)";
@@ -59,7 +59,7 @@ body {
     font-weight: 400;
     margin: 0;
     border: 0;
-    letter-spacing: -.01em;
+    letter-spacing: .01em;
     word-spacing: 0.001em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-fontsmoothing: grayscale;
@@ -75,6 +75,9 @@ body {
     }
 }
 
+strong {
+    font-weight: 700;
+}
 
 // +---------------------------------------------------------------
 // + PAGE 
@@ -99,6 +102,13 @@ body {
         position: relative;
     }
 
+
+    &.is-active {
+        .content {
+            transform: translateX(0);
+        }
+    }
+
     @media @desktop {
         &:hover {
             transform: translateX(40vw / 20)
@@ -112,9 +122,6 @@ body {
                 transform: translateX(0)
             }
 
-            .content {
-                transform: translateX(0);
-            }
 
         }
 
@@ -140,6 +147,7 @@ body {
 
         &:hover {
             transform: none !important;
+
             & > * {
                 opacity: 0.6;
             }
@@ -190,6 +198,7 @@ body {
         @media @mobile {
             position: relative;
             padding: 0px;
+            transform: translateX(0);
         }
 
     }
@@ -219,13 +228,22 @@ body {
             width: 80%;
             border-bottom: 4px solid @black;
             display: block;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
 
     &_text {
         font-size: 18px;
-        line-height: 32px;
+        line-height: 28px;
         position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
 
 
         h3 {
@@ -293,6 +311,11 @@ body {
     flex-direction: column;
     background: @color1;
     box-shadow: none;
+    align-content: center;
+    align-items: flex-start;
+
+    justify-content: space-between;
+
     padding: 0;
 
     @media @mobile {
@@ -302,7 +325,7 @@ body {
     &.is-active {
         .hide {
             transform: translateX(40vw / 6);
-            transition: transform @ease 0s;
+            transition: transform @ease 0.25s;
         }
 
     }
@@ -345,7 +368,6 @@ body {
         font-size: 5rem;
         line-height: 5.2rem;
         font-family: @title;
-        min-height: 50vh;
         padding: 50px 0;
 
         @media @mobile {
@@ -357,21 +379,25 @@ body {
     }
 
     &_content {
-        min-height: 50vh;
-        padding: 0rem 0;
-        width: 100%;
+        padding: 50px 0;
+        width: auto;
         color: @black;
-        font-size: 1.75rem;
-        line-height: 1.45em;
+        font-size: 1.2rem;
+        line-height: 1.6em;
+        font-family: @title;
+        background: @black;
+        color: @color1;
+        box-shadow: 0 0 2em -0.5em @black;
 
         p {
-            max-width: 500px;
+            max-width: 600px;
+            margin-bottom: 10px;
         }
 
         @media @mobile {
             min-height: auto;
-            font-size: 1.3rem;
-            line-height: 1.45em;
+            font-size: 1rem;
+            line-height: 1.5em;
             padding-bottom: 50px;
         }
     }
