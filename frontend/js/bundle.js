@@ -12,6 +12,10 @@ var page = $('.page');
 
 $(document).ready(function () {
 
+
+    // WIDOW FIX
+    $('.page_title, h1, h3, p').widowFix();
+
     page.click(function () {
         var $this = $(this),
             number = $this.data('number');

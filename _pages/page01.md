@@ -1,6 +1,6 @@
 ---
 title: All women are hysterical*
-cover: /frontend/img/hysterical.png
+cover: /frontend/img/cover/01.png
 number: 1
 ---
 

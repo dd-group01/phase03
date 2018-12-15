@@ -112,6 +112,10 @@ body {
                 transform: translateX(0)
             }
 
+            .content {
+                transform: translateX(0);
+            }
+
         }
 
         &.is-slided {
@@ -136,7 +140,6 @@ body {
 
         &:hover {
             transform: none !important;
-
             & > * {
                 opacity: 0.6;
             }
@@ -145,7 +148,6 @@ body {
         &.is-active {
             &:hover {
                 & > * {
-                    transform: none !important;
                     opacity: 1;
                 }
             }
@@ -181,7 +183,9 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        padding: 0px (40vw / 6) 0px 0px;
+        padding: 0px 0px 0px 0px;
+        transform: translateX(-40vw / 6);
+        transition: transform @ease;
 
         @media @mobile {
             position: relative;
@@ -194,7 +198,7 @@ body {
         font-size: 4rem;
         line-height: 4.2rem;
         font-family: @title;
-        padding: 50px 0;
+        padding: 50px (40vw /6) 50px 0px;
 
         @media @mobile {
             min-height: auto;
@@ -210,21 +214,19 @@ body {
         position: relative;
         margin-bottom: 50px;
 
+
         img {
-            width: 100%;
+            width: 80%;
+            border-bottom: 4px solid @black;
             display: block;
         }
     }
 
     &_text {
         font-size: 18px;
-        line-height: 28px;
+        line-height: 32px;
         position: relative;
 
-        @media @mobile {
-            font-size: 1.3rem;
-            line-height: 1.45em;
-        }
 
         h3 {
             text-transform: uppercase;
@@ -233,11 +235,23 @@ body {
             padding-top: 5px;
             letter-spacing: 1px;
             font-weight: 700;
-            border-top: 2px solid @black;
+
+            @media @mobile {
+                font-size: 1.1rem;
+                line-height: 1.5em;
+            }
         }
 
         p {
+            max-width: 700px;
             margin-bottom: 25px;
+
+
+            @media @mobile {
+                font-size: 1.1rem;
+                line-height: 1.5em;
+            }
+
         }
 
 
@@ -304,6 +318,10 @@ body {
         text-align: center;
         transition: transform @ease 0.5s;
         transform: translateX(0);
+
+        @media @mobile {
+            display: none;
+        }
 
         &_title {
             transform: rotate(90deg) translateX(-40vw / 6);
