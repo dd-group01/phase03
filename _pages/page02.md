@@ -5,7 +5,7 @@ number: 2
 layout: default
 ---
 
-### Women are a mass of inconsistency, and if her lips are moving, she’s being a hypocrite
+### They are a mass of inconsistency
 
 There are numerical disparities in every walk of life, but feminists focus only on those situations in which women are apparently oppressed, and which benefit their cause.
 
