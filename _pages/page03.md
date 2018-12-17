@@ -5,6 +5,8 @@ number: 3
 layout: default
 ---
 
-It should just be ASSUMED that if a Women is Interested in a Man then She is Interested in him for what SHE THINKS HE CAN DO FOR HER whether that be his Treasure, Attention, Security, Servitude ETC. Of Course, CASH IS KING !!
+### 
+
+It should just be assumed that if a women is interested in a man then she is Interested in him for what she thinks he can do for her, whether that be his treasure, attention, security, servitude, etc. Of course, cash is the king!!
 
 [*source*](https://www.mgtow.com/forums/topic/the-reason-why-all-women-are-gold-diggers/)

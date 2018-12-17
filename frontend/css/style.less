@@ -36,8 +36,9 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    //    user-select: none;
+    //    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 
 ::-webkit-scrollbar {
@@ -221,7 +222,6 @@ strong {
 
     &_cover {
         position: relative;
-        margin-bottom: 50px;
 
 
         img {
@@ -236,6 +236,7 @@ strong {
     }
 
     &_text {
+        padding: 50px 0 25px 0;
         font-size: 18px;
         line-height: 28px;
         position: relative;
@@ -382,8 +383,8 @@ strong {
         padding: 50px 0;
         width: auto;
         color: @black;
-        font-size: 1.2rem;
-        line-height: 1.6em;
+        font-size: 1rem;
+        line-height: 1.5em;
         font-family: @title;
         background: @black;
         color: @color1;
