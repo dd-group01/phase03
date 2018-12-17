@@ -12,7 +12,7 @@ function loadScript() {
     slide_svg.find('g#Livello_1').addClass('is-active');
 
 
-    slide_control.find('.slide__control_dot').click(function () {
+    slide_control.find('.slide__control_dot').hover(function () {
         slide_control.find('.slide__control_dot').removeClass('is-active');
         slide_svg.find('g').removeClass('is-active');
         var num = $(this).data('num');
