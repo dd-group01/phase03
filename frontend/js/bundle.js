@@ -8,6 +8,7 @@
 var page = $('.page');
 
 
+
 // INIT
 
 $(document).ready(function () {
@@ -34,7 +35,6 @@ $(document).ready(function () {
                 $(this).addClass('is-slided');
             } else {
                 $(this).removeClass('is-slided');
-                console.log('nient');
             }
         })
 

@@ -193,7 +193,7 @@ strong {
         left: 0;
         right: 0;
         padding: 0px 0px 0px 0px;
-        transform: translateX(-40vw / 6);
+        transform: translateX(-40vw / 3);
         transition: transform @ease;
 
         @media @mobile {
@@ -255,10 +255,12 @@ strong {
             letter-spacing: 1px;
             font-weight: 700;
             max-width: 700px;
+            padding: 0px 2rem;
 
             @media @mobile {
                 font-size: 1.1rem;
                 line-height: 1.5em;
+                padding: 0px 1rem;
             }
         }
 
@@ -266,10 +268,26 @@ strong {
             max-width: 700px;
             margin-bottom: 25px;
 
+            padding: 0px 2rem;
 
             @media @mobile {
                 font-size: 1.1rem;
                 line-height: 1.5em;
+                padding: 0px 1rem;
+            }
+
+
+            &.fullscreen {
+                padding: 0;
+                max-width: 100%;
+
+                @media @mobile {
+                    padding: 0;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
 
         }
@@ -405,3 +423,7 @@ strong {
     }
 
 }
+
+
+
+@import 'import/page05';

@@ -1,0 +1,53 @@
+.slide {
+
+    &__viz {
+
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+
+            & > g {
+                opacity: 0;
+                transition: opacity @ease;
+
+
+                &.is-active {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        background: #f0f0f0;
+    }
+
+    &__control {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        &_dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background: #F0F0F0;
+            margin: 20px 5px;
+            cursor: pointer;
+            transition: background @ease;
+
+            &:hover {
+                background-color: @black;
+            }
+
+            &.is-active {
+                background: @black;
+            }
+
+        }
+
+
+    }
+
+}
