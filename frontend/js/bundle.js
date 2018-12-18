@@ -18,7 +18,7 @@ $(document).ready(function () {
     loader.addClass('is-loaded');
 
     // WIDOW FIX
-    $('.page_title, h1, h3, p').widowFix();
+    $('.title, h1, h3, p').widowFix();
 
     page.click(function (evt) {
 
