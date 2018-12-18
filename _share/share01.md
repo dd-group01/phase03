@@ -1,5 +1,5 @@
 ---
 title: Stop Hate Against Women
-fbCover: /frontend/img/share/fb-01.png
+fbCover: /frontend/img/share/fb-uno.png
 layout: share
 ---
