@@ -5,7 +5,9 @@
 /*jshint validthis: true */
 /*global $*/
 
-var page = $('.page');
+var page = $('.page'),
+    loader = $('.loader');
+
 
 
 
@@ -13,10 +15,17 @@ var page = $('.page');
 
 $(document).ready(function () {
 
+    loader.addClass('is-loaded');
 
     // WIDOW FIX
     $('.page_title, h1, h3, p').widowFix();
-    page.click(function () {
+
+    page.click(function (evt) {
+
+        if (evt.target.matches('span')) {
+            asterisk();
+            return;
+        }
 
         if (!$(this).closest('.page').hasClass('is-active')) {
 
@@ -42,18 +51,23 @@ $(document).ready(function () {
             })
 
         }
-
-
-
     })
 
-
-
-    $('.page_title span:nth-child(2)').click(function () {
-        console.log($(this));
-    });
-
-
-
-
 })
+
+
+
+function asterisk() {
+    // OPEN END PAGE
+    page.removeClass('is-active');
+    var number = 6;
+
+    page.each(function (i) {
+
+        if (i < number) {
+            $(this).addClass('is-slided');
+        }
+    })
+
+    $('.is-end').addClass('is-active');
+}

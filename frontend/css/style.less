@@ -84,6 +84,23 @@ strong {
 // + PAGE 
 // +---------------------------------------------------------------
 
+.loader {
+    background: @color1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100vh;
+    transition: transform @ease 1s;
+
+    &.is-loaded {
+        transform: translateY(-100vh);
+        pointer-events: none;
+    }
+}
+
 .page {
     position: absolute;
     height: 100vh;
@@ -112,7 +129,7 @@ strong {
 
     @media @desktop {
         &:hover {
-            transform: translateX(40vw / 20)
+            transform: translateX(40vw / 40)
         }
 
         &.is-active {
@@ -130,7 +147,7 @@ strong {
             transform: translateX(-60vw + 40vw / 6);
 
             &:hover {
-                transform: translateX(-60vw + 40vw / 6 + 40vw / 20);
+                transform: translateX(-60vw + 40vw / 6 + 40vw / 40);
             }
 
         }
@@ -148,6 +165,13 @@ strong {
             font-family: @title;
             font-size: 2.2rem;
             line-height: 3rem;
+
+            @media @mobile {
+                font-size: 1.1rem;
+                line-height: 1.5em;
+
+            }
+
         }
 
 
@@ -224,10 +248,16 @@ strong {
             padding-right: 50px;
         }
 
-        span:nth-child(2) {
-            color: @color1;
+        span {
+            color: @black;
             animation: blink infinite 1s;
             cursor: pointer;
+            transition: color @ease;
+
+            &:hover {
+                color: @color1;
+                animation: none;
+            }
         }
 
     }
@@ -320,6 +350,7 @@ strong {
         line-height: 4.2rem;
         width: 40vw / 6;
         text-align: center;
+        cursor: pointer;
 
         @media @mobile {
             width: auto;
@@ -446,11 +477,10 @@ strong {
 
 @keyframes blink {
     0% {
-        opacity: 1;
-        color: @white;
+        opacity: 0;
     }
 
     100% {
-        color: @black;
+        opacity: 1;
     }
 }
