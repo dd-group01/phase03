@@ -6,16 +6,15 @@
 <html class="no-js">
 <!--<![endif]-->
 
-{% include head.html %}
+<head>
+    <!-- Meta tags for social networks -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.pages[0].description }}">
+    <meta property="og:image" content="{{ page.fbCover | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
 
-<!-- Meta tags for social networks -->
-<meta property="og:title" content="{{ page.title }}">
-<meta property="og:description" content="{{ site.pages[0].description }}">
-<meta property="og:image" content="{{ page.fbCover | absolute_url }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta name="twitter:card" content="summary_large_image">
-
-<meta http-equiv="refresh" content="0; url={{ site.url | relative_url}}">
+</head>
 
 <body>
 
