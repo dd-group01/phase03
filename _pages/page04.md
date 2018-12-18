@@ -2,7 +2,6 @@
 title: All women are sluts
 cover: /frontend/img/cover/04.png
 number: 4
-layout: default
 ---
 
 ### Women? They sell pussy, problem solved

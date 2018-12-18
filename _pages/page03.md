@@ -2,7 +2,6 @@
 title: All women are gold diggers
 cover: /frontend/img/cover/03.png
 number: 3
-layout: default
 ---
 
 ### "It's not you, it's your empty bank account"

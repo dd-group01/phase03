@@ -2,7 +2,6 @@
 title: All women are biologically inferior to men
 cover: /frontend/img/cover/05.png
 number: 5
-layout: default
 ---
 
 ### Everything women have, is given to them by men

@@ -5,6 +5,10 @@ collections:
     output: false
     permalink: /:path
     layout: "redirect"
+  share:
+    output: true
+    permalink: /:title
+    layout: "share"
 
 
 defaults:
