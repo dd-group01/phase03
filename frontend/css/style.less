@@ -144,6 +144,12 @@ strong {
             transition: opacity @ease;
         }
 
+        .page_subtitle {
+            font-family: @title;
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+
 
 
         &:hover {
@@ -216,6 +222,12 @@ strong {
             line-height: 2.3rem;
             padding-top: 0;
             padding-right: 50px;
+        }
+
+        span:nth-child(2) {
+            color: @color1;
+            animation: blink infinite 1s;
+            cursor: pointer;
         }
 
     }
@@ -300,7 +312,9 @@ strong {
         position: absolute;
         pointer-events: none;
         right: 0;
-        top: 50px;
+        top: 0px;
+        bottom: 0;
+        padding-top: 50px;
         font-family: @title;
         font-size: 4rem;
         line-height: 4.2rem;
@@ -427,3 +441,16 @@ strong {
 
 
 @import 'import/page05';
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: @white;
+    }
+
+    100% {
+        color: @black;
+    }
+}

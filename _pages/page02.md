@@ -1,5 +1,5 @@
 ---
-title: All women are hypocrites*
+title: All women are hypocrites
 cover: /frontend/img/cover/02.png
 number: 2
 layout: default

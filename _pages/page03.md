@@ -1,5 +1,5 @@
 ---
-title: All women are gold diggers*
+title: All women are gold diggers
 cover: /frontend/img/cover/03.png
 number: 3
 layout: default

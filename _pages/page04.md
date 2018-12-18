@@ -1,5 +1,5 @@
 ---
-title: All women are sluts*
+title: All women are sluts
 cover: /frontend/img/cover/04.png
 number: 4
 layout: default
