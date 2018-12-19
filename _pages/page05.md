@@ -8,4 +8,6 @@ number: 5
 
 They are not very bright, to say the least. They have a very basic understanding of things at best. Almost all women are just retarded. They are completely brainless, pathetic and shallow. They have no emotions. Men have emotions, while women confuse their weakness for emotion. Emotions come from having testosterone, which they do not have. They are just so far beneath men that it seems legit to wonder why they still exist. Darwinism is not working fast enough.
 
+
+### Examples of women's body bad design
 {% include_relative visualization/5-slide.html %}
