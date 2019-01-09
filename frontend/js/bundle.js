@@ -112,11 +112,12 @@ function refresh(social, num) {
 
     $('.' + social).data('href', link);
 
-
 }
 
 
 function roulette() {
+
+    share();
 
 
     var option = {
@@ -145,4 +146,6 @@ function roulette() {
     $('.start').click(function () {
         rouletter.roulette('start');
     });
+
+
 }
