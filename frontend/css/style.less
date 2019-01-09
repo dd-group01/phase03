@@ -107,6 +107,7 @@ strong {
     align-content: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     &_ball {
         width: 16px;
@@ -114,6 +115,15 @@ strong {
         background: @color1;
         border-radius: 8px;
         animation: blink infinite 0.5s;
+    }
+
+    &_text {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: @color1;
+        padding-top: 10px;
+        font-family: @title;
     }
 
 
