@@ -72,6 +72,7 @@ body {
     -moz-osx-fontsmoothing: grayscale;
     transition: opacity @ease 0.2s, filter @ease 0.4s;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .module {
@@ -99,10 +100,11 @@ strong {
     right: 0;
     z-index: 1000;
     height: 100vh;
-    transition: transform @ease 1s;
+    transition: opacity @ease 1s, filter @ease 1s;
 
     &.is-loaded {
-        transform: translateY(-100vh);
+        opacity: 0;
+        filter: blur(10px);
         pointer-events: none;
     }
 }
@@ -374,6 +376,10 @@ strong {
         align-items: center;
         justify-content: center;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
 
         &_img {
             border: 2px solid @grey;
@@ -409,6 +415,7 @@ strong {
 
                 .button {
                     padding: 25px 40px !important;
+                    margin: 0px 5px;
                 }
 
                 .fb {
@@ -595,6 +602,7 @@ strong {
 
 
 @import 'import/page05';
+@import 'import/method';
 
 
 

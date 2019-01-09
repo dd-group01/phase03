@@ -53,7 +53,10 @@ $(document).ready(function () {
         }
     })
 
-    roulette();
+    setTimeout(function () {
+        roulette();
+    }, 500)
+
 
 })
 
@@ -75,7 +78,45 @@ function asterisk() {
 }
 
 
+function share() {
+
+    $('.fb, .tw').click(function (e) {
+        e.preventDefault();
+        window.open($(this).data('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    });
+
+}
+
+function refresh(social, num) {
+
+    console.log(social);
+
+
+    var link;
+
+    switch (social) {
+        case 'fb':
+            link = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdd-group01.github.io%2Fphase03%2Fshare' + num;
+            break;
+        case 'tw':
+            link = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fdd-group01.github.io%2Fphase03%2Fshare' + num + '&hashtags=AFManifesto&text=&original_referer=';
+            break;
+
+        case 'ig':
+
+            break;
+    }
+
+    $('.' + social).data('href', link);
+
+
+}
+
+
 function roulette() {
+
+    share();
 
     var option = {
         speed: 20,
@@ -89,14 +130,15 @@ function roulette() {
         stopCallback: function ($stopElm) {
             var ID = $stopElm.data('number');
             console.log(ID);
-
+            refresh('fb', ID);
+            refresh('tw', ID);
             $('.page_roulette_share').removeClass('is-disabled');
         }
     }
 
     var rouletter = $('.page_roulette_img')
     rouletter.roulette(option);
-
+    rouletter.roulette('start');
 
     $('.start').click(function () {
         rouletter.roulette('start');
