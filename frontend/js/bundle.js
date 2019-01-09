@@ -5,7 +5,8 @@
 /*jshint validthis: true */
 /*global $*/
 
-var page = $('.page'),
+var main = $('main'),
+    page = $('.page'),
     loader = $('.loader');
 
 
@@ -15,6 +16,7 @@ var page = $('.page'),
 
 $(document).ready(function () {
 
+    main.removeClass('is-blur');
     loader.addClass('is-loaded');
 
     // WIDOW FIX
@@ -116,11 +118,10 @@ function refresh(social, num) {
 
 function roulette() {
 
-    share();
 
     var option = {
         speed: 20,
-        duration: 0.1,
+        duration: 1,
         startCallback: function () {
 
             $('.page_roulette_share').addClass('is-disabled');
@@ -139,6 +140,7 @@ function roulette() {
     var rouletter = $('.page_roulette_img')
     rouletter.roulette(option);
     rouletter.roulette('start');
+
 
     $('.start').click(function () {
         rouletter.roulette('start');

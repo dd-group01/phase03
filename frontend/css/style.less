@@ -7,6 +7,7 @@
 @white: #FFFFFF;
 @black: #000;
 @grey: #999999;
+@grey-light: fade(@grey, 50);
 
 
 @color1: #FF6D4A; // orange
@@ -70,9 +71,11 @@ body {
     word-spacing: 0.001em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-fontsmoothing: grayscale;
-    transition: opacity @ease 0.2s, filter @ease 0.4s;
+    transition: filter @ease 1s;
     overflow-x: hidden;
     margin: 0;
+
+
 }
 
 .module {
@@ -85,6 +88,20 @@ body {
 
 strong {
     font-weight: 700;
+}
+
+main {
+    filter: blur(0px);
+    overflow: hidden;
+    transition: transform @ease, opacity @ease;
+    position: relative;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+
+    &.is-blur {
+        opacity: 0;
+    }
 }
 
 // +---------------------------------------------------------------
@@ -100,11 +117,11 @@ strong {
     right: 0;
     z-index: 1000;
     height: 100vh;
-    transition: opacity @ease 1s, filter @ease 1s;
+    transition: opacity @ease 0.5s;
+
 
     &.is-loaded {
         opacity: 0;
-        filter: blur(10px);
         pointer-events: none;
     }
 }
@@ -383,6 +400,7 @@ strong {
 
         &_img {
             border: 2px solid @grey;
+            position: relative;
             width: auto;
         }
 
@@ -486,6 +504,20 @@ strong {
 
         img {
             height: 35vh;
+        }
+    }
+
+    &_footer {
+        margin: 50px 0 25px 0;
+        padding: 25px 0;
+        border-top: 1px dotted @grey-light;
+        font-family: @title;
+        color: @white;
+
+        a {
+            text-decoration: none;
+            color: @white;
+            border-bottom: 1px solid @white;
         }
     }
 
