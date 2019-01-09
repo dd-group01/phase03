@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-This website is a new platform to understand, embrace and join the anti-feminist movement.
-
 The ideology that today’s feminism brings to the attention is a constant complaining about manspreading and mansplaining, that pushes to one and only message: “Men are evil, broken and wrong”.
 
 In a society which increasingly lacks a positive identity for men, feminism carries out a sexual strategy through which women want to create a matriarchal society, covering it up as a demand of equality.

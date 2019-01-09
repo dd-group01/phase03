@@ -53,6 +53,8 @@ $(document).ready(function () {
         }
     })
 
+    roulette();
+
 })
 
 
@@ -70,4 +72,33 @@ function asterisk() {
     })
 
     $('.is-end').addClass('is-active');
+}
+
+
+function roulette() {
+
+    var option = {
+        speed: 20,
+        duration: 0.1,
+        startCallback: function () {
+
+            $('.page_roulette_share').addClass('is-disabled');
+
+        },
+        slowDownCallback: function () {},
+        stopCallback: function ($stopElm) {
+            var ID = $stopElm.data('number');
+            console.log(ID);
+
+            $('.page_roulette_share').removeClass('is-disabled');
+        }
+    }
+
+    var rouletter = $('.page_roulette_img')
+    rouletter.roulette(option);
+
+
+    $('.start').click(function () {
+        rouletter.roulette('start');
+    });
 }

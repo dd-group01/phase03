@@ -169,8 +169,8 @@ strong {
 
         .page_subtitle {
             font-family: @title;
-            font-size: 2.2rem;
-            line-height: 3rem;
+            font-size: 2rem;
+            line-height: 2.6rem;
 
             @media @mobile {
                 font-size: 1.1rem;
@@ -366,6 +366,123 @@ strong {
         }
 
     }
+
+    &_roulette {
+        padding-top: 50px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+
+        &_img {
+            border: 2px solid @grey;
+            width: auto;
+        }
+
+        &_share {
+            padding: 0px 50px;
+            text-align: center;
+            transition: opacity @ease;
+
+
+            &.is-disabled {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: @title;
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+                margin-bottom: 15px;
+
+                @media @mobile {
+                    font-size: 1.1rem;
+                    line-height: 1.5em;
+
+                }
+            }
+
+            &_social {
+
+                .button {
+                    padding: 25px 40px !important;
+                }
+
+                .fb {
+                    border-color: #5276F7 !important;
+                    color: #5276F7 !important;
+                }
+
+                .tw {
+                    border-color: #29ABE2 !important;
+                    color: #29ABE2 !important;
+                }
+
+                .ig {
+                    border-color: #FF6D4A !important;
+                    color: #FF6D4A !important;
+                }
+
+            }
+
+            &_separator {
+                padding: 25px 0;
+                color: @grey;
+                font-family: @title;
+                position: relative;
+
+                span {
+                    background: @black;
+                    padding: 0px 25px;
+                    z-index: 1000;
+                    position: relative;
+                }
+
+                &:before {
+                    content: '';
+                    background: @grey;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    opacity: 0.6;
+                }
+            }
+
+        }
+
+        .button {
+            border: 1.5px solid @white;
+            font-family: @title;
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+            text-align: center;
+            display: inline-block;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 25px 25px;
+            text-transform: uppercase;
+            border-radius: 40px;
+            transition: opacity @ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+        }
+
+        img {
+            height: 35vh;
+        }
+    }
+
+
 }
 
 
