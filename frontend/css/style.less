@@ -37,8 +37,6 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    //    user-select: none;
-    //    -webkit-tap-highlight-color: red;
 
 }
 
@@ -52,10 +50,6 @@
     display: none;
 }
 
-html,
-body {
-    height: auto;
-}
 
 body {
     background: @white;
@@ -76,6 +70,10 @@ body {
     margin: 0;
 
 
+    @media @mobile {
+        overflow: auto;
+    }
+
 }
 
 .module {
@@ -90,19 +88,6 @@ strong {
     font-weight: 700;
 }
 
-main {
-    filter: blur(0px);
-    overflow: hidden;
-    transition: transform @ease, opacity @ease;
-    position: relative;
-    opacity: 1;
-    height: 100vh;
-    width: 100vw;
-
-    &.is-blur {
-        opacity: 0;
-    }
-}
 
 // +---------------------------------------------------------------
 // + PAGE 
@@ -118,6 +103,18 @@ main {
     z-index: 1000;
     height: 100vh;
     transition: opacity @ease 0.5s;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    &_ball {
+        width: 16px;
+        height: 16px;
+        background: @color1;
+        border-radius: 8px;
+        animation: blink infinite 0.5s;
+    }
 
 
     &.is-loaded {
@@ -143,6 +140,7 @@ main {
         width: 100vw;
         height: auto;
         position: relative;
+        z-index: 1 !important;
     }
 
 
@@ -401,7 +399,8 @@ main {
         &_img {
             border: 2px solid @grey;
             position: relative;
-            width: auto;
+            height: 35vh;
+            width: 35vh;
         }
 
         &_share {

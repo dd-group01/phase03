@@ -65,18 +65,27 @@ $(document).ready(function () {
 
 
 function asterisk() {
-    // OPEN END PAGE
-    page.removeClass('is-active');
-    var number = 6;
 
-    page.each(function (i) {
+    if ($(window).width() < 587) {
+        $('html,body').animate({
+            scrollTop: $('#end').offset().top
+        }, 'fast');
 
-        if (i < number) {
-            $(this).addClass('is-slided');
-        }
-    })
+    } else {
+        // OPEN END PAGE
+        page.removeClass('is-active');
+        var number = 6;
 
-    $('.is-end').addClass('is-active');
+        page.each(function (i) {
+
+            if (i < number) {
+                $(this).addClass('is-slided');
+            }
+        })
+
+        $('.is-end').addClass('is-active');
+
+    }
 }
 
 
