@@ -14,13 +14,15 @@
     <meta property="og:description" content="{{ site.pages[0].description }}">
     <meta property="og:image" content="{{ page.fbCover | absolute_url }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />
-    <meta property="og:image" content="{{ page.fbCover | absolute_url }}" />
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@Mozzillation">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ site.pages[0].description }}">
+    <meta name="twitter:image" content="{{ page.fbCover | absolute_url }}">
+
 
     <meta http-equiv="refresh" content="0; url={{ site.url | relative_url}}/phase03/?ref={{page.ref}}">
 

@@ -29,6 +29,25 @@
 
 
 
+    {% include footer.html %}
+
+
+    <script>
+        function get_metric(long_url, login, api_key, func) {
+            $.getJSON(
+                "https://api-ssl.bitly.com/v3/link/clicks?access_token=dcbfd1ef1b57eb1923e7b6fdcbde5aa9dd849431&link=http%3A%2F%2Fbit.ly%2AFManifesto",
+                function(response) {
+                    console.log(response)
+                }
+            );
+        }
+
+        get_metric();
+
+    </script>
+
+
+
 
 
 
