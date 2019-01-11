@@ -43,18 +43,20 @@
 
 
     <script>
-        function get_metric(long_url, login, api_key, func) {
-            $.getJSON(
-                "https://api-ssl.bitly.com/v3/link/clicks?access_token=dcbfd1ef1b57eb1923e7b6fdcbde5aa9dd849431&link=http%3A%2F%2Fbit.ly%2AFManifesto",
-                function(response) {
-                    console.log(response)
-                }
-            );
-        }
-
-        get_metric();
+        $.ajax({
+            url: 'https://www.googleapis.com/analytics/v3/data/ga?ids=ga:187589482&start-date=2008-10-01&end-date=today&metrics=ga:sessions,ga:bounces',
+            method: "GET",
+            headers: {
+                "Authorization": "Bearer AIzaSyDiybpnBnxRxbu3FkTdMZDH8MWM3aoHTuA",
+            },
+        }).then(function(response) {
+            console.log(response);
+        }).catch(function(err) {
+            console.error(err);
+        });
 
     </script>
+
 
 
 
