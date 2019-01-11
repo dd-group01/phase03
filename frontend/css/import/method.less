@@ -2,26 +2,60 @@
     min-height: 100vh;
     background: @color3;
 
+    overflow: hidden;
+
+    .module {
+
+        padding: 0px 10vw;
+        margin: auto;
+
+        @media @mobile {
+            padding: 0px 1rem;
+        }
+    }
+
+
+    &_back {
+        overflow: hidden;
+        margin: 50px 0 10px;
+        font-family: @title;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 30px 30px;
+        border-radius: 100px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        opacity: 0.4;
+        box-shadow: 0px 0px 50px fade(@black, 30);
+        transition: opacity @ease, box-shadow @ease, background @ease;
+
+        &:hover {
+            background: @white;
+            opacity: 1;
+        }
+    }
+
 
     &_title {
 
-        padding: 10vh 10vw;
-        word-break: normal;
-        max-width: 500px;
+        padding: 50px 0 100px;
+        max-width: 100%;
         font-size: 5rem;
         line-height: 5.2rem;
         font-family: @title;
         text-decoration: line-through;
+        word-break: normal;
 
         @media @mobile {
             min-height: auto;
-            font-size: 2rem;
-            line-height: 2.3rem;
-            padding: 5vh 1rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 50px 0rem;
         }
 
     }
-
 
     &_content {
         background-color: @white;
@@ -29,13 +63,16 @@
         overflow: scroll;
         z-index: 10000000;
         position: relative;
-
-        margin: 0px 8.5vw;
+        font-family: @title;
+        margin: 0px 7.5vw;
         min-height: 100vh;
         width: 85vw;
         bottom: 0;
         padding: 50px 2.5vw;
         color: @black;
+
+        font-size: 1rem;
+        line-height: 1.5em;
 
 
         @media @mobile {
