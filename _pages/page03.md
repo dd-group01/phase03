@@ -6,9 +6,9 @@ number: 3
 
 ### "It's not you, it's your empty bank account"
 
-Women want to be comfortable, they want to create the best possible life for themselves. If they can get any man in this world, why look for someone who cannot provide anything to them? Love is possible to find in any human being, rich or poor. For that reason focusing the search in the wealthy department is only a strategy in to achieving what they know they have the capacity for. 
+All women are gold-diggers to different degrees. Most just want financial stability, they want you to have a job, be able to afford a dinner out every week and a summer holiday. Some women just take this further.  No matter what feminists try to preach in schools and the media, women have evolved to be dependent on men. Unlike men they do not feel the same sense of shame at not being self-reliant. If a woman loses her job, she can happily mooch off guys for a long time until something else comes along. A woman's identity largely derives from the status of her partner. A man's identity is derived from what he does. I think this is why men tend to be makers and earners, and women are leechers and spenders.
 
-So, if a women is interested in a man, then she is interested in him for what she thinks he can do for her, whether that be his treasure, attention, security, servitude, etc. And of course, cash is the king!
+To put this in perspective, in a hunter/gatherer society back then, one would achieve this characteristic by being proficient at hunting and being a good provider/protector for his family. Nowadays, its clearly different lawl. Women value dominance which is defined in by wealth.
 
 ### Is your girlfriend a gold digger? 
 

@@ -44,11 +44,23 @@
 
     <script>
         $.ajax({
-            url: 'https://www.googleapis.com/analytics/v3/data/ga?ids=ga:187589482&start-date=2008-10-01&end-date=today&metrics=ga:sessions',
-            method: "GET",
-            headers: {
-                "Authorization": "Bearer 813699983043-kir7fj27jiabnksmsd3988k0hr06q2a2.apps.googleusercontent.com",
+            url: 'https://analyticsreporting.googleapis.com/v4/reports:batchGet',
+            method: "POST",
+            header: {
+                "Authorization": "Bearer KL1ozrZrnKNj_1YG1B2nU8Cc",
             },
+            body: {
+                "reportRequests": [{
+                    "viewId": "187589482",
+                    "dateRanges": [{
+                        "startDate": "2015-11-01",
+                        "endDate": "today"
+                    }],
+                    "metrics": [{
+                        "expression": "ga:users"
+                    }]
+                }]
+            }
         }).then(function(response) {
             console.log(response);
         }).catch(function(err) {

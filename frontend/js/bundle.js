@@ -55,9 +55,7 @@ $(document).ready(function () {
         }
     })
 
-    setTimeout(function () {
-        roulette();
-    }, 500)
+    roulette();
 
 
 })
@@ -131,7 +129,7 @@ function roulette() {
 
     var option = {
         speed: 20,
-        duration: 1,
+        duration: 0.1,
         startCallback: function () {
 
             $('.page_roulette_share').addClass('is-disabled');

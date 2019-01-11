@@ -6,9 +6,8 @@ number: 1
 
 ### Don't argue with women, bro
 
-Why do men wreck their brain trying to make sense of the current insanity? Would you walk into an asylum for mentally insane and start to debate with one of the residents?
+How often have you heard a woman's bitchy behavior be written off as "PMS" or "She must be going through her cycle". In all the time I've been around women I've heard this excuse plastered on the walls. How often are guys schooled in happy marriages with logic like "She'll calm down in a few days, maybe it's hormones".
 
-Men have got to understand that it’s over! Women are ruined! And can only bring devastation, destruction to men’s lives in 2018. It is what it is, we’re living near the end of days, near the time where there will be a nuclear winter. Mankind had its days, we’re witnessing the end of sanity!
+Culturally, it's called "being a bitch" and refusing to "adult" about your bleeding. Everyone knows you can control it, and actively choose not to.  Men just pay the price because you're a fucking irrational child.
 
-Why do men endlessly try to understand what is irrational? What is depraved and abusive? What does one do in the presence of a mad individual? Does one try to come up with a clever way to convince, negotiate? Women have become terrorists! One can’t conduct any negotiation with severely mentally unstable individuals. Get a dog, a doll, get a hobby. Make peace with the implacable reality that our females have lost their minds!
-
+Why do men wreck their brain trying to make sense of the current insanity? Would you walk into an asylum for mentally insane and start to debate with one of the residents? Men have got to understand that it’s over! Women are ruined, and can only bring devastation, destruction to men’s lives in 2018.
