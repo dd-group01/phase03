@@ -128,8 +128,8 @@ function roulette() {
 
 
     var option = {
-        speed: 20,
-        duration: 0.1,
+        speed: 100,
+        duration: 1,
         startCallback: function () {
 
             $('.page_roulette_share').addClass('is-disabled');
