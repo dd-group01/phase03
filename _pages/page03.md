@@ -10,6 +10,10 @@ All women are gold-diggers to different degrees. Most just want financial stabil
 
 To put this in perspective, in a hunter/gatherer society back then, one would achieve this characteristic by being proficient at hunting and being a good provider/protector for his family. Nowadays, its clearly different lawl. Women value dominance which is defined in by wealth.
 
+There is no other way to describe them, gents. Some are good at hiding it while others have no shame in what they want. At the end of the day, they want your money. They don’t care about anything else. Society promotes this behavior now. Accept it, gents. All women are gold diggers. Female nature at it’s finest below.
+
+It should just be assumed that if a Women is Interested in a Man then She is Interested in him for what she thinks he can do for her whether that be his Treasure, Attention, Security, Servitude etx. Of Course, CASH IS KING!!
+
 ### Is your girlfriend a gold digger? 
 
 <p class="fullscreen schema" markdown="1">

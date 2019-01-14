@@ -194,6 +194,16 @@ strong {
             transition: opacity @ease;
         }
 
+        a {
+            color: @color1;
+            text-decoration: none;
+            margin-top: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px dotted @color1;
+        }
+
         .page_subtitle {
             font-family: @title;
             font-size: 2rem;
@@ -521,7 +531,11 @@ strong {
         padding: 25px 0;
         border-top: 1px dotted @grey-light;
         font-family: @title;
-        color: @white;
+        color: @grey-light;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        max-width: 500px;
 
         a {
             text-decoration: none;
