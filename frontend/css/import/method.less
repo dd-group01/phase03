@@ -4,6 +4,12 @@
 
     overflow: hidden;
 
+    a {
+        color: inherit;
+
+        display: block;
+    }
+
     .module {
 
         padding: 0px 10vw;
@@ -12,7 +18,12 @@
         @media @mobile {
             padding: 0px 1rem;
         }
+
+
+
     }
+
+
 
 
     &_back {
@@ -28,6 +39,7 @@
         font-size: 0.8rem;
         line-height: 0.8rem;
         opacity: 0.4;
+        color: @black;
         box-shadow: 0px 0px 50px fade(@black, 30);
         transition: opacity @ease, box-shadow @ease, background @ease;
 
@@ -83,5 +95,43 @@
 
     }
 
+
+    h3 {
+        text-transform: uppercase;
+        font-family: @title;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding: 0px 0rem;
+
+        @media @mobile {
+            font-size: 1.1rem;
+            line-height: 1.5em;
+            padding: 0px 0rem;
+        }
+    }
+
+    p {
+        margin-bottom: 25px;
+
+        @media @mobile {
+            font-size: 1.1rem;
+            line-height: 1.5em;
+        }
+    }
+
+
+    #treemap {
+        rect {
+            fill: none;
+            stroke: none;
+
+            &.children {
+                stroke: #FFF;
+            }
+
+        }
+    }
 
 }

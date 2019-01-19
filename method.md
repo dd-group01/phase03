@@ -1,8 +1,16 @@
 ---
+title: All women are hysterical
+cover: /frontend/img/cover/01.png
+number: 1
 layout: method
 ---
-The ideology that today’s feminism brings to the attention is a constant complaining about manspreading and mansplaining, that pushes to one and only message: “Men are evil, broken and wrong”.
 
-In a society which increasingly lacks a positive identity for men, feminism carries out a sexual strategy through which women want to create a matriarchal society, covering it up as a demand of equality.
+### Don't argue with women, bro
 
-**Don't be a mangina: follow the 5 steps to make sure women didn't brainwash you.**
+How often have you heard a woman's bitchy behavior be written off as "PMS" or "She must be going through her cycle". In all the time I've been around women I've heard this excuse plastered on the walls. How often are guys schooled in happy marriages with logic like "She'll calm down in a few days, maybe it's hormones".
+
+Culturally, it's called "being a bitch" and refusing to "adult" about your bleeding. Everyone knows you can control it, and actively choose not to.  Men just pay the price because you're a fucking irrational child.
+
+Why do men wreck their brain trying to make sense of the current insanity? Would you walk into an asylum for mentally insane and start to debate with one of the residents? Men have got to understand that it’s over! Women are ruined, and can only bring devastation, destruction to men’s lives in 2018.
+
+{% include_relative _pages/visualization/method/treemap.html %}

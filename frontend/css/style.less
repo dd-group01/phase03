@@ -11,7 +11,7 @@
 
 
 @color1: #FF6D4A; // orange
-@color2: #FFBDBD; // ping 
+@color2: #FFBDBD; // pink
 @color3: #44B582; // green
 @color4: #5276F7; // blue
 
@@ -145,12 +145,17 @@ strong {
     padding: 50px 0;
     background: @white;
     cursor: pointer;
+    scroll-snap-type: y mandatory;
 
     @media @mobile {
         width: 100vw;
         height: auto;
         position: relative;
         z-index: 1 !important;
+    }
+
+    & > div {
+        scroll-snap-align: center;
     }
 
 

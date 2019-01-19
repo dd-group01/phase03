@@ -29,9 +29,7 @@
         </div>
 
         <div class="method_content">
-
-            {{page.content}}
-
+            {{content}}
         </div>
 
 
@@ -43,29 +41,7 @@
 
 
     <script>
-        $.ajax({
-            url: 'https://analyticsreporting.googleapis.com/v4/reports:batchGet',
-            method: "POST",
-            header: {
-                "Authorization": "Bearer KL1ozrZrnKNj_1YG1B2nU8Cc",
-            },
-            body: {
-                "reportRequests": [{
-                    "viewId": "187589482",
-                    "dateRanges": [{
-                        "startDate": "2015-11-01",
-                        "endDate": "today"
-                    }],
-                    "metrics": [{
-                        "expression": "ga:users"
-                    }]
-                }]
-            }
-        }).then(function(response) {
-            console.log(response);
-        }).catch(function(err) {
-            console.error(err);
-        });
+
 
     </script>
 

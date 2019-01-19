@@ -1,0 +1,44 @@
+{
+    "name": "flare",
+    "children": [
+        {
+            "name": "MGTOW",
+            "size": 1000,
+            "color": "#FFBDBD"
+        },
+
+        {
+            "name": "Reddit",
+            "color": "#FF6D4A",
+            "children": [
+                {
+                    "name": "/r/buh",
+                    "size": 1000
+        }, {
+                    "name": "/r/altro",
+                    "size": 400
+        }
+
+
+                ]
+        },
+
+        {
+            "name": "EHEHEH",
+            "color": "#FFBDBD",
+            "children": [
+                {
+                    "name": "/r/buh",
+                    "size": 1000
+        }, {
+                    "name": "/r/altro",
+                    "size": 400
+        }
+
+
+                ]
+        }
+
+
+     ]
+}
