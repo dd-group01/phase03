@@ -106,10 +106,10 @@ function refresh(social, num) {
 
     switch (social) {
         case 'fb':
-            link = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdd-group01.github.io%2Fphase03%2Fshare' + num;
+            link = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FAFManifesto' + num;
             break;
         case 'tw':
-            link = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fdd-group01.github.io%2Fphase03%2Fshare' + num + '&hashtags=AFManifesto&text=&original_referer=';
+            link = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2FAFManifesto' + num;
             break;
 
         case 'ig':
