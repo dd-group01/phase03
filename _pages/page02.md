@@ -4,10 +4,6 @@ cover: /frontend/img/cover/02.png
 number: 2
 ---
 
-### They are a mass of inconsistency
-
-There are numerical disparities in every walk of life, but feminists focus only on those situations in which women are apparently oppressed, and which benefit their cause.
-
-The feminist hypocrisy arises in their silence regarding jobs such as coal mining and oil drilling, or the military. Oh, they don’t have a problem with the massive gender imbalance in these careers, because they’re dangerous, challenging and requiring of immense bravery and strength. This is because the imbalance is beneficial to women.
-There is a core of hate within feminism. It is a plague upon the world. It is dishonest, cultish and detrimental to the advancement of society.
+<section class="snap intro"><div class="module">One of the biggest example of hypocrisy for women is when they act/dress like whores (somehow this is supposed to be empowering for them) and at the same time demand to be respected and treated equally. Otherwise feminists focus only on those situations in which women are apparently oppressed, and which benefit their cause. There is a core of hate within feminism. It is a plague upon the world, it is dishonest, cultish and detrimental to the advancement of society.
+</div></section>
 

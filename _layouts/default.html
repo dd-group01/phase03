@@ -42,23 +42,31 @@
     <section class="page n{{page.number}}" data-number="{{page.number}}">
 
         <div class="page_content content">
-            <div class="module">
 
-                <div class="page_title">
-                    <div class="title">
-                        {{ page.title }}<span>*</span>
+            <section class="snap header">
+                <div class="module">
+
+                    <div class="page_title">
+                        <div class="title">
+                            {{ page.title }}<span>*</span>
+                        </div>
                     </div>
+
+                    <div class="page_cover" style="background-image: url({{page.cover | relative_url }})">
+                    </div>
+
                 </div>
 
-                <div class="page_cover">
-                    <img src="{{page.cover | relative_url }}" />
-                </div>
 
-            </div>
+
+            </section>
+
+
 
             <div class="page_text">
                 {{page.content}}
             </div>
+
 
 
         </div>
@@ -72,83 +80,94 @@
     {% endfor %}
 
     <section class="page n6 is-end" data-number="6" id="end">
+
         <div class="page_content content">
-            <div class="module">
-                <div class="page_title">
-                    Stop hate against women!
-                    Everything you read was shared by real users.
-                </div>
+            <section class="snap">
 
-
-                <div class="page_subtitle">
-                    <p>From the “lightest” jokes to the harsher beliefs of women inferiority to men, it’s easy to gradually fall into a misogynist cycle. Women are often victims of sexist beliefs and the Web is the place where gender based hate spreads the most. All the words used inside this website are comments and posts shared by real people.
-
-                        Spread awareness about the topic by sharing this post, generate your ereased insult and let’s defeat the hate together.</p>
-
-                    <p><a href="./method">Find out more about the project.</a></p>
-                </div>
-
-
-                <div class="page_roulette">
-
-                    <div class="page_roulette_img">
-
-                        <img src="{{ 'frontend/img/share/01/ig.png' | relative_url}}" data-number="01">
-                        <img src="{{ 'frontend/img/share/02/ig.png' | relative_url}}" data-number="02">
-                        <img src="{{ 'frontend/img/share/03/ig.png' | relative_url}}" data-number="03">
-                        <img src="{{ 'frontend/img/share/04/ig.png' | relative_url}}" data-number="04">
-                        <img src="{{ 'frontend/img/share/05/ig.png' | relative_url}}" data-number="05">
-                        <img src="{{ 'frontend/img/share/06/ig.png' | relative_url}}" data-number="06">
-                        <img src="{{ 'frontend/img/share/07/ig.png' | relative_url}}" data-number="07">
-                        <img src="{{ 'frontend/img/share/08/ig.png' | relative_url}}" data-number="08">
-                        <img src="{{ 'frontend/img/share/09/ig.png' | relative_url}}" data-number="09">
-                        <img src="{{ 'frontend/img/share/10/ig.png' | relative_url}}" data-number="10">
-                        <img src="{{ 'frontend/img/share/11/ig.png' | relative_url}}" data-number="11">
-                        <img src="{{ 'frontend/img/share/12/ig.png' | relative_url}}" data-number="12">
-                        <img src="{{ 'frontend/img/share/13/ig.png' | relative_url}}" data-number="13">
-                        <img src="{{ 'frontend/img/share/14/ig.png' | relative_url}}" data-number="14">
-                        <img src="{{ 'frontend/img/share/15/ig.png' | relative_url}}" data-number="15">
-                        <img src="{{ 'frontend/img/share/16/ig.png' | relative_url}}" data-number="16">
-                        <img src="{{ 'frontend/img/share/17/ig.png' | relative_url}}" data-number="17">
-                        <img src="{{ 'frontend/img/share/18/ig.png' | relative_url}}" data-number="18">
-                        <img src="{{ 'frontend/img/share/19/ig.png' | relative_url}}" data-number="19">
-                        <img src="{{ 'frontend/img/share/20/ig.png' | relative_url}}" data-number="20">
+                <div class="module">
+                    <div class="page_title">
+                        Stop hate against women!
+                        Everything you read was shared by real users.
                     </div>
 
-                    <div class="page_roulette_share">
-                        <h1>SHARE ON YOUR SOCIAL PROFILES <br>
-                            AND STAND AGAINST MISOGYNY</h1>
 
-                        <div class="page_roulette_share_social">
-                            <div class="button fb" data-href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.manojyadav.co.in">
-                                FB
-                            </div>
-                            <div class="button tw">
-                                TW
-                            </div>
-                            <div class="button ig">
-                                IG
-                            </div>
-                        </div>
+                    <div class="page_subtitle">
+                        <p>From the “lightest” jokes to the harsher beliefs of women inferiority to men, it’s easy to gradually fall into a misogynist cycle. Women are often victims of sexist beliefs and the Web is the place where gender based hate spreads the most. All the words used inside this website are comments and posts shared by real people.
 
-                        <div class="page_roulette_share_separator">
-                            <span>OR</span>
-                        </div>
+                            Spread awareness about the topic by sharing this post, generate your ereased insult and let’s defeat the hate together.</p>
 
-                        <div class="page_roulette_generate start button">
-                            GENERATE NEW ONE
-                        </div>
-
+                        <p><a href="./method">Find out more about the project.</a></p>
                     </div>
+
                 </div>
+            </section>
+
+            <section class="snap">
+
+                <div class="module">
+
+                    <div class="page_roulette">
 
 
-                <div class="page_footer">
-                    A project by Giuliano Mozzillo, Jacopo Perico, Noemi Schiavi, Amarildo Shelna, Daniele Zanetti, Shan Zhu, Alice Ziantoni
+                        <div class="page_roulette_img">
+
+                            <img src="{{ 'frontend/img/share/01/ig.png' | relative_url}}" data-number="01">
+                            <img src="{{ 'frontend/img/share/02/ig.png' | relative_url}}" data-number="02">
+                            <img src="{{ 'frontend/img/share/03/ig.png' | relative_url}}" data-number="03">
+                            <img src="{{ 'frontend/img/share/04/ig.png' | relative_url}}" data-number="04">
+                            <img src="{{ 'frontend/img/share/05/ig.png' | relative_url}}" data-number="05">
+                            <img src="{{ 'frontend/img/share/06/ig.png' | relative_url}}" data-number="06">
+                            <img src="{{ 'frontend/img/share/07/ig.png' | relative_url}}" data-number="07">
+                            <img src="{{ 'frontend/img/share/08/ig.png' | relative_url}}" data-number="08">
+                            <img src="{{ 'frontend/img/share/09/ig.png' | relative_url}}" data-number="09">
+                            <img src="{{ 'frontend/img/share/10/ig.png' | relative_url}}" data-number="10">
+                            <img src="{{ 'frontend/img/share/11/ig.png' | relative_url}}" data-number="11">
+                            <img src="{{ 'frontend/img/share/12/ig.png' | relative_url}}" data-number="12">
+                            <img src="{{ 'frontend/img/share/13/ig.png' | relative_url}}" data-number="13">
+                            <img src="{{ 'frontend/img/share/14/ig.png' | relative_url}}" data-number="14">
+                            <img src="{{ 'frontend/img/share/15/ig.png' | relative_url}}" data-number="15">
+                            <img src="{{ 'frontend/img/share/16/ig.png' | relative_url}}" data-number="16">
+                            <img src="{{ 'frontend/img/share/17/ig.png' | relative_url}}" data-number="17">
+                            <img src="{{ 'frontend/img/share/18/ig.png' | relative_url}}" data-number="18">
+                            <img src="{{ 'frontend/img/share/19/ig.png' | relative_url}}" data-number="19">
+                            <img src="{{ 'frontend/img/share/20/ig.png' | relative_url}}" data-number="20">
+                        </div>
+
+
+                        <div class="page_roulette_share">
+                            <h1>SHARE ON YOUR SOCIAL PROFILES <br>
+                                AND STAND AGAINST MISOGYNY</h1>
+
+                            <div class="page_roulette_share_social">
+                                <div class="button fb">
+                                    FB
+                                </div>
+                                <div class="button tw">
+                                    TW
+                                </div>
+                                <div class="button ig">
+                                    IG
+                                </div>
+                            </div>
+
+                            <div class="page_roulette_share_separator">
+                                <span>OR</span>
+                            </div>
+
+                            <div class="page_roulette_generate start button">
+                                GENERATE NEW ONE
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="page_footer">
+                        A project by Giuliano Mozzillo, Jacopo Perico, Noemi Schiavi, Amarildo Shelna, Daniele Zanetti, Shan Zhu, Alice Ziantoni
+                    </div>
+
+
                 </div>
-
-
-            </div>
         </div>
 
         <div class="page_number">

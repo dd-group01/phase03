@@ -142,7 +142,7 @@ strong {
     background-color: @white;
     overflow: hidden;
     transition: margin @ease, transform @ease;
-    padding: 50px 0;
+    padding: 0px 0;
     background: @white;
     cursor: pointer;
     scroll-snap-type: y mandatory;
@@ -154,10 +154,79 @@ strong {
         z-index: 1 !important;
     }
 
-    & > div {
-        scroll-snap-align: center;
+    .snap {
+        height: 100vh;
+        scroll-snap-align: start;
+
+        @media @mobile {
+            height: auto;
+        }
+
+        &.intro {
+            display: flex;
+            flex-direction: column;
+            padding: 1.7em 0rem 0 0rem;
+            line-height: 49px;
+            font-size: 1.75em;
+            letter-spacing: -.02em;
+            font-family: @title;
+            background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='49' height='49'><line x1='0' y1='48' x2='49' y2='48' style='stroke:#eee; stroke-width:2' /></svg>") repeat 0 0rem;
+
+        }
+
     }
 
+
+    .header {
+
+        width: 60vw - (40vw / 6);
+
+        @media @mobile {
+            padding: 50px 0 0 0;
+            width: 100%;
+        }
+
+
+
+
+        .module {
+            flex-direction: column;
+            display: flex;
+            height: 100vh;
+
+            @media @mobile {
+                height: auto;
+
+            }
+        }
+
+
+
+        .page_cover {
+            margin-bottom: 50px;
+            border-bottom: 10px solid @black;
+            flex-grow: 2;
+            background-size: contain;
+            background-position: bottom center;
+            background-repeat: no-repeat;
+
+            @media @mobile {
+                padding-bottom: 60%;
+                margin-bottom: 0;
+            }
+
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .intro {
+        background: #f0f0f0;
+
+    }
 
     &.is-active {
         .content {
@@ -314,6 +383,7 @@ strong {
         position: relative;
 
 
+
         img {
             width: 80%;
             border-bottom: 4px solid @black;
@@ -326,10 +396,18 @@ strong {
     }
 
     &_text {
-        padding: 50px 0 25px 0;
+        padding: 0px 0 0px 0;
         font-size: 18px;
         line-height: 28px;
         position: relative;
+
+        .module {
+            padding-right: 100px;
+
+            @media @mobile {
+                padding-right: 0px;
+            }
+        }
 
         img {
             width: 100%;

@@ -4,15 +4,10 @@ cover: /frontend/img/cover/03.png
 number: 3
 ---
 
-### "It's not you, it's your empty bank account"
+<section class="snap intro"><div class="module">All women are gold-diggers to different degrees. Most just want financial stability, they want you to have a job, be able to afford a dinner out every week and a summer holiday: women have evolved to be dependent on men. A woman’s identity largely derives from the status of her partner. A man’s identity is derived from what he does. I think this is why men tend to be makers and earners, and women are leechers and spenders. All women are gold diggers.
+</div></section>
 
-All women are gold-diggers to different degrees. Most just want financial stability, they want you to have a job, be able to afford a dinner out every week and a summer holiday. Some women just take this further.  No matter what feminists try to preach in schools and the media, women have evolved to be dependent on men. Unlike men they do not feel the same sense of shame at not being self-reliant. If a woman loses her job, she can happily mooch off guys for a long time until something else comes along. A woman's identity largely derives from the status of her partner. A man's identity is derived from what he does. I think this is why men tend to be makers and earners, and women are leechers and spenders.
 
-To put this in perspective, in a hunter/gatherer society back then, one would achieve this characteristic by being proficient at hunting and being a good provider/protector for his family. Nowadays, its clearly different lawl. Women value dominance which is defined in by wealth.
-
-There is no other way to describe them, gents. Some are good at hiding it while others have no shame in what they want. At the end of the day, they want your money. They don’t care about anything else. Society promotes this behavior now. Accept it, gents. All women are gold diggers. Female nature at it’s finest below.
-
-It should just be assumed that if a Women is Interested in a Man then She is Interested in him for what she thinks he can do for her whether that be his Treasure, Attention, Security, Servitude etx. Of Course, CASH IS KING!!
 
 ### Is your girlfriend a gold digger? 
 
