@@ -5,12 +5,35 @@ number: 1
 layout: method
 ---
 
-### Don't argue with women, bro
+### The problem
 
-How often have you heard a woman's bitchy behavior be written off as "PMS" or "She must be going through her cycle". In all the time I've been around women I've heard this excuse plastered on the walls. How often are guys schooled in happy marriages with logic like "She'll calm down in a few days, maybe it's hormones".
+Hate speech is one of the most important conceptual categories in anti-oppression politics today; a great deal of energy and political will is devoted to identifying, characterizing, contesting, and (sometimes) penalizing hate speech. However, despite the increasing inclusion of gender identity as a socially salient trait, antipatriarchal attitudes has largely been absent within this body of social education. 
 
-Culturally, it's called "being a bitch" and refusing to "adult" about your bleeding. Everyone knows you can control it, and actively choose not to.  Men just pay the price because you're a fucking irrational child.
+The inclusion of misogyny in a definition of what constitutes hate speech is generally controversial. Too often sexism is seen as a “second-class” offence, somehow less dangerous than racism or religious hatred. But it is not.
 
-Why do men wreck their brain trying to make sense of the current insanity? Would you walk into an asylum for mentally insane and start to debate with one of the residents? Men have got to understand that it’s over! Women are ruined, and can only bring devastation, destruction to men’s lives in 2018.
+The explosion of social media provided a new and free-access platform for people to incite violence and to spread patriarchy-enforcing mindset. Though even men can experience this kind of hate, women are more severely attacked and often insulted.
 
-{% include_relative _pages/visualization/method/treemap.html %}
+With the online proliferation of hate speech, there is an urgent need to talk about whether someone is using any kind of harmful content.
+
+### The concept
+
+Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the Anti-feminist Manifesto as a flagship worth to be followed. 
+
+The website speaks mainly to users that don’t know much about feminism or even to the ones that identify themselves as anti-feminist, not understanding the cultural background they are associating themselves to.
+
+The five points of the Manifesto ironically attempt to persuade the visitors to join the Anti-feminist movement, but the desired effect is the complete opposite. Indeed the website gradually show the power and the gravity of hate speech, going from the normalized forms of sexisim till the most serious and brutal words and images used to discredit women.
+
+So the aim of the project is to bring awareness on and sensitize the visitors, underlining the importance of being feminist in an era where is so easy to share harmful and offensive contents.
+                                                                
+Another target is represented by people who think that equality has been achieved, not considering the importance of feminism and its principles.
+
+### The website
+
+The AntiFeminist Manifesto was born as part of the Final Synthesis Lab final project at Politecnico di Milano. The Lab, held by DensityDesign research department, aims to analyze and engage the public about complex and controversial social issues through the analysis of data contents.
+ -climax
+
+
+### Visitors of the website
+
+In order to track the potenziale di diffusione of the project we created some simple visualization to register some interesting data about the users that visit and share the link. We are able, thanks to this process , to see the resonance of “the AntiFeminist Manifesto” and prove the feasibility, due to how many people involve themselves in the campaign.
+
