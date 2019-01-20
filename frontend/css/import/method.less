@@ -123,12 +123,45 @@
 
 
     #treemap {
+
+        g {
+            overflow: hidden;
+        }
+
+        g.is-visible {
+            text {
+
+                &.children {
+                    opacity: 1;
+                }
+
+                &.parent {
+                    opacity: 0;
+                }
+            }
+        }
+
+        text {
+            transition: opacity @ease;
+            max-width: 300px;
+            text-overflow: ellipsis;
+            z-index: 100000;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.3em;
+
+            &.children {
+                opacity: 0;
+            }
+        }
+
         rect {
             fill: none;
             stroke: none;
 
             &.children {
-                stroke: #FFF;
+                stroke: fade(@white, 30);
             }
 
         }

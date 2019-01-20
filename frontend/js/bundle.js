@@ -95,6 +95,12 @@ function share() {
         return false;
     });
 
+
+    $('.ig').click(function (e) {
+        e.preventDefault();
+        $('.ig_selection').addClass('is-open');
+    });
+
 }
 
 function refresh(social, num) {

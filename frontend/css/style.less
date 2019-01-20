@@ -145,7 +145,6 @@ strong {
     padding: 0px 0;
     background: @white;
     cursor: pointer;
-    scroll-snap-type: y mandatory;
 
     @media @mobile {
         width: 100vw;
@@ -155,8 +154,6 @@ strong {
     }
 
     .snap {
-        height: 100vh;
-        scroll-snap-align: start;
 
         @media @mobile {
             height: auto;
@@ -169,6 +166,7 @@ strong {
             line-height: 49px;
             font-size: 1.75em;
             letter-spacing: -.02em;
+            margin-bottom: 100px;
             font-family: @title;
             background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='49' height='49'><line x1='0' y1='48' x2='49' y2='48' style='stroke:#eee; stroke-width:2' /></svg>") repeat 0 0rem;
 
@@ -209,6 +207,7 @@ strong {
             background-size: contain;
             background-position: bottom center;
             background-repeat: no-repeat;
+            height: 60vh;
 
             @media @mobile {
                 padding-bottom: 60%;
@@ -737,6 +736,57 @@ strong {
 
 }
 
+
+.ig_selection {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: fade(@black, 80);
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity @ease;
+
+    &.is-open {
+        opacity: 1;
+        pointer-events: all;
+
+    }
+
+
+
+    &_post,
+    &_story {
+        border: 1.5px solid @white;
+        font-family: @title;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 25px 25px;
+        text-transform: uppercase;
+        border-radius: 40px;
+        transition: opacity @ease;
+        cursor: pointer;
+        margin: 20px;
+        color: @color1;
+        background: @white;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+    }
+}
 
 
 @import 'import/page05';
