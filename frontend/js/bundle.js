@@ -16,8 +16,7 @@ var main = $('main'),
 
 $(document).ready(function () {
 
-    main.removeClass('is-blur');
-    loader.addClass('is-loaded');
+
 
     // WIDOW FIX
     $('.title, h1, h3, p').widowFix();
@@ -56,6 +55,12 @@ $(document).ready(function () {
     })
 
     roulette();
+
+
+    setTimeout(function () {
+        main.removeClass('is-blur');
+        loader.addClass('is-loaded');
+    }, 2000)
 
 
 })

@@ -13,5 +13,6 @@ $('.meme-carousel').flickity({
     cellAlign: 'center',
     contain: true,
     pageDots: false,
-    prevNextButtons: false
+    prevNextButtons: false,
+    lazyLoad: 3
 });
