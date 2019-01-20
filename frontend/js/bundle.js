@@ -96,9 +96,10 @@ function share() {
     });
 
 
-    $('.ig').click(function (e) {
+    $('.ig, .st').click(function (e) {
+        var href = $(this).data('href');
+        window.open(href, '_blank');
         e.preventDefault();
-        $('.ig_selection').addClass('is-open');
     });
 
 }
@@ -117,9 +118,11 @@ function refresh(social, num) {
         case 'tw':
             link = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2FAFManifesto' + num;
             break;
-
         case 'ig':
-
+            link = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/ig.png';
+            break;
+        case 'st':
+            link = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/st.png';
             break;
     }
 
@@ -147,6 +150,8 @@ function roulette() {
             console.log(ID);
             refresh('fb', ID);
             refresh('tw', ID);
+            refresh('ig', ID);
+            refresh('st', ID);
             $('.page_roulette_share').removeClass('is-disabled');
         }
     }

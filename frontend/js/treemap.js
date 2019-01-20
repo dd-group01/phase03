@@ -84,10 +84,10 @@ function wrap(text, width) {
             line = [],
             lineNumber = 0,
             lineHeight = 1.3, // ems
-            x = text.attr("x"),
+            xdim = text.attr("x"),
             y = text.attr("y"),
             dy = text.attr("dy"),
-            tspan = text.text(null).append("tspan").attr("x", x).attr("dy", 0 + "em");
+            tspan = text.text(null).append("tspan").attr("x", xdim).attr("dy", 0 + "em");
         while (word = words.pop()) {
             line.push(word);
             tspan.text(line.join(" "));
@@ -95,7 +95,7 @@ function wrap(text, width) {
                 line.pop();
                 tspan.text(line.join(" "));
                 line = [word];
-                tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+                tspan = text.append("tspan").attr("x", xdim).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
             }
         }
     });
