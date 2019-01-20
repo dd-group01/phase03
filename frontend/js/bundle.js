@@ -54,13 +54,21 @@ $(document).ready(function () {
         }
     })
 
-    roulette();
 
 
     setTimeout(function () {
         main.removeClass('is-blur');
         loader.addClass('is-loaded');
     }, 2000)
+
+    var rouletteFirst = true;
+    $('.is-end').click(function () {
+        if (rouletteFirst) {
+            roulette();
+            rouletteFirst = false;
+        }
+
+    })
 
 
 })
@@ -143,7 +151,7 @@ function roulette() {
 
     var option = {
         speed: 100,
-        duration: 1,
+        duration: 0.1,
         startCallback: function () {
 
             $('.page_roulette_share').addClass('is-disabled');

@@ -19,6 +19,8 @@ With the online proliferation of hate speech, there is an urgent need to talk ab
 
 Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the Anti-feminist Manifesto as a flagship worth to be followed. 
 
+{% include_relative _pages/visualization/method/treemap.html %}
+
 The website speaks mainly to users that don’t know much about feminism or even to the ones that identify themselves as anti-feminist, not understanding the cultural background they are associating themselves to.
 
 The five points of the Manifesto ironically attempt to persuade the visitors to join the Anti-feminist movement, but the desired effect is the complete opposite. Indeed the website gradually show the power and the gravity of hate speech, going from the normalized forms of sexisim till the most serious and brutal words and images used to discredit women.
