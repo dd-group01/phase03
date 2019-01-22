@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 
     // WIDOW FIX
-    $('.title, h1, h3, p').widowFix();
+    $('.title, h1, h3, p, .snap.intro .module').widowFix();
 
     page.click(function (evt) {
 

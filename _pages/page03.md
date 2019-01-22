@@ -11,8 +11,26 @@ number: 3
 
 ### Is your girlfriend a gold digger? 
 
+<div class="fullscreen schema">
+    <div class="bandersnatch">
+        
+        <div class="question" data-quest="1" data-path="1">
+        <div class="module">
+            <div class="question_text">Does she asks questions about your job?</div>
+            <div class="question_button">
+                <div class="question_button_yes">YES</div>
+                <div class="question_button_no">NO</div>
+            </div>
+        </div>
+        </div>
+    
+    </div>
+</div>
+
+<!--
 <p class="fullscreen schema" markdown="1">
     ![Gold Digger Schema]({{ 'frontend/img/page03/schema.png' | relative_url}})
 </p>
+-->
 
 

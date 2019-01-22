@@ -1,53 +1,112 @@
-.slide {
+//.slide {
+//
+//    &__viz {
+//
+//        svg {
+//            width: 100%;
+//            height: auto;
+//            display: block;
+//
+//            & > g {
+//                opacity: 0;
+//                transition: opacity @ease;
+//
+//
+//                &.is-active {
+//                    opacity: 1;
+//                }
+//            }
+//
+//        }
+//
+//        background: #f0f0f0;
+//    }
+//
+//    &__control {
+//        display: flex;
+//        align-content: center;
+//        align-items: center;
+//        justify-content: center;
+//
+//        &_dot {
+//            width: 8px;
+//            height: 8px;
+//            border-radius: 4px;
+//            background: #F0F0F0;
+//            margin: 20px 5px;
+//            cursor: pointer;
+//            transition: background @ease;
+//
+//            &:hover {
+//                background-color: @black;
+//            }
+//
+//            &.is-active {
+//                background: @black;
+//            }
+//
+//        }
+//
+//
+//    }
+//
+//}
 
-    &__viz {
 
-        svg {
-            width: 100%;
-            height: auto;
-            display: block;
+.urbino {
+    position: relative;
 
-            & > g {
-                opacity: 0;
-                transition: opacity @ease;
-
-
-                &.is-active {
-                    opacity: 1;
-                }
-            }
-
-        }
-
-        background: #f0f0f0;
+    svg {
+        display: block;
     }
 
-    &__control {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    &-popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: @black;
+        color: @white;
+        font-size: 14px;
+        max-width: 300px;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity @ease;
 
-        &_dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 4px;
-            background: #F0F0F0;
-            margin: 20px 5px;
-            cursor: pointer;
-            transition: background @ease;
-
-            &:hover {
-                background-color: @black;
-            }
-
-            &.is-active {
-                background: @black;
-            }
-
+        &.is-visible {
+            opacity: 1;
         }
-
 
     }
 
+    circle {
+        animation: blink infinite 1s;
+        transition: fill @ease;
+        mix-blend-mode: multiply;
+
+        &:nth-child(1n) {
+            animation-delay: 0.1s
+        }
+
+        &:nth-child(2n) {
+            animation-delay: 0.2s
+        }
+
+        &:nth-child(3n) {
+            animation-delay: 0.3s
+        }
+
+        &:nth-child(4n) {
+            animation-delay: 0.4s
+        }
+
+        &:nth-child(5n) {
+            animation-delay: 0.5s
+        }
+
+        &:hover {
+            animation: none;
+            fill: @color4;
+        }
+
+    }
 }
