@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 
     // WIDOW FIX
-    $('.title, h1, h3, p, .snap.intro .module').widowFix();
+    $('.title, h1, h3, p, .snap.intro .module, .page_title').widowFix();
 
     page.click(function (evt) {
 
@@ -62,14 +62,14 @@ $(document).ready(function () {
     //        loader.addClass('is-loaded');
     //    }, 2000)
 
-//    var rouletteFirst = true;
-//    $('.is-end').click(function () {
-//        if (rouletteFirst) {
-//            roulette();
-//            rouletteFirst = false;
-//        }
-//
-//    })
+    //    var rouletteFirst = true;
+    //    $('.is-end').click(function () {
+    //        if (rouletteFirst) {
+    //            roulette();
+    //            rouletteFirst = false;
+    //        }
+    //
+    //    })
 
 
 })
