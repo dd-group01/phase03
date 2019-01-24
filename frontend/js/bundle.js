@@ -56,10 +56,11 @@ $(document).ready(function () {
 
 
 
-    setTimeout(function () {
-        main.removeClass('is-blur');
-        loader.addClass('is-loaded');
-    }, 2000)
+
+//    setTimeout(function () {
+             //        main.removeClass('is-blur');
+             //        loader.addClass('is-loaded');
+             //    }, 2000)
 
     var rouletteFirst = true;
     $('.is-end').click(function () {

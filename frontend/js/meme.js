@@ -6,7 +6,7 @@
 
 
 //
-$('.meme-carousel').flickity({
+var $carousel = $('.meme-carousel').flickity({
     // options
     freeScroll: true,
     wrapAround: true,
@@ -15,4 +15,28 @@ $('.meme-carousel').flickity({
     pageDots: false,
     prevNextButtons: false,
     lazyLoad: 3
+});
+
+if (!Cookies.get('accepted')) {
+    $('.cookies').addClass('is-visible');
+}
+
+$('.agree').click(function (e) {
+    e.preventDefault();
+    Cookies.set('accepted', 'true');
+    console.log('cuai');
+    $('.cookies').removeClass('is-visible');
+});
+
+
+$carousel.on('lazyLoad.flickity', function (event, cellElement) {
+    console.log("TRIG");
+    setTimeout(function () {
+        main.removeClass('is-blur');
+        loader.addClass('is-loaded');
+    }, 2000)
+
+
+
+
 });

@@ -134,6 +134,77 @@ strong {
     }
 }
 
+
+.cookies {
+    background: @black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 100vh;
+    transition: opacity @ease 0.5s;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+
+
+    &.is-visible {
+        opacity: 1;
+        pointer-events: all;
+
+    }
+
+
+
+    &_text {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: @color1;
+        padding-top: 10px;
+        font-family: @title;
+        text-align: center;
+        padding: 0px 50px;
+    }
+
+
+    &_button {
+        font-family: @title;
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 15px 25px;
+        text-transform: uppercase;
+        border-radius: 40px;
+        transition: opacity @ease;
+        cursor: pointer;
+        background: @white;
+        color: @black;
+        margin-top: 25px;
+        text-align: center;
+
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: @title;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+    }
+
+}
+
 .page {
     position: absolute;
     height: 100vh;
