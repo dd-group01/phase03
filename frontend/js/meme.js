@@ -28,12 +28,22 @@ $('.agree').click(function (e) {
     $('.cookies').removeClass('is-visible');
 });
 
+var rouletteFirst = true;
+
 
 $carousel.on('lazyLoad.flickity', function (event, cellElement) {
     console.log("TRIG");
+
+
+
+
     setTimeout(function () {
         main.removeClass('is-blur');
         loader.addClass('is-loaded');
+        if (rouletteFirst) {
+            roulette();
+            rouletteFirst = false;
+        }
     }, 2000)
 
 

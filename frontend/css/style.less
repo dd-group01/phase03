@@ -590,21 +590,42 @@ strong {
     &_roulette {
         padding-top: 50px;
         display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
 
         @media @mobile {
             flex-direction: column;
         }
 
-
         &_img {
-            border: 2px solid @grey;
-            position: relative;
-            height: 35vh;
-            width: 35vh;
+            width: 25vh;
+            height: auto;
         }
+
+        .button {
+            border: 1.5px solid @white;
+            font-family: @title;
+            font-size: 10px;
+            line-height: 1.3rem;
+
+            text-align: center;
+            display: inline-block;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 15px 25px;
+            text-transform: uppercase;
+            border-radius: 40px;
+            transition: opacity @ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+        }
+
+
 
         &_share {
             padding: 0px 50px;
@@ -620,8 +641,8 @@ strong {
             h1 {
                 text-align: center;
                 font-family: @title;
-                font-size: 1.3rem;
-                line-height: 1.8rem;
+                font-size: 1rem;
+                line-height: 1.3rem;
                 margin-bottom: 15px;
 
                 @media @mobile {
@@ -634,28 +655,52 @@ strong {
             &_social {
 
                 .button {
-                    padding: 25px 40px !important;
-                    margin: 0px 5px;
+                    font-family: @title;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                    text-align: center;
+                    display: inline-block;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    padding: 15px 20px;
+                    text-transform: uppercase;
+                    border-radius: 40px;
+                    transition: opacity @ease;
+                    cursor: pointer;
+                    background: @white;
+                    color: @white;
+                    margin-top: 25px;
+                    text-align: center;
+
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: @title;
+                    min-width: 100px;
+                    margin: 5px;
+                    border: none !important;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+
                 }
 
+
                 .fb {
-                    border-color: #5276F7 !important;
-                    color: #5276F7 !important;
+                    background: #5276F7 !important;
                 }
 
                 .tw {
-                    border-color: #29ABE2 !important;
-                    color: #29ABE2 !important;
+                    background: #29ABE2 !important;
                 }
 
                 .ig {
-                    border-color: #FF6D4A !important;
-                    color: #FF6D4A !important;
+                    background: #FF6D4A !important;
                 }
 
                 .st {
-                    border-color: #999 !important;
-                    color: #999 !important;
+                    background: #999 !important;
                 }
 
             }
@@ -671,6 +716,8 @@ strong {
                     padding: 0px 25px;
                     z-index: 1000;
                     position: relative;
+                    font-size: 1rem;
+                    line-height: 1.3rem;
                 }
 
                 &:before {
@@ -688,29 +735,18 @@ strong {
 
         }
 
-        .button {
-            border: 1.5px solid @white;
-            font-family: @title;
-            font-size: 0.8rem;
-            line-height: 0.8rem;
-            text-align: center;
-            display: inline-block;
-            font-weight: bold;
-            letter-spacing: 2px;
-            padding: 25px 25px;
-            text-transform: uppercase;
-            border-radius: 40px;
-            transition: opacity @ease;
-            cursor: pointer;
 
-            &:hover {
-                opacity: 0.6;
-            }
 
+        &_img {
+            flex-grow: 2;
+            border: 2px solid @grey;
+            position: relative;
         }
 
+
         img {
-            height: 35vh;
+            width: 100%;
+            height: auto;
         }
     }
 
