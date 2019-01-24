@@ -26,6 +26,9 @@
 @desktop: ~ "only screen and (min-width: 587px)";
 @mobile: ~ "only screen and (max-width: 586px)";
 
+@alice: ~ "only screen and (max-width: 1280px)";
+
+
 @seconds: 0.5s;
 
 
@@ -619,6 +622,10 @@ strong {
         &_img {
             height: auto;
             max-width: 400px;
+
+            @media @alice {
+                max-width: 200px;
+            }
         }
 
         .button {
