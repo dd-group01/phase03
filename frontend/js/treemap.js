@@ -19,11 +19,18 @@ d3.json("data/treemap.json", function (json) {
         .data(treemap.nodes)
         .enter().append("div")
         .attr("class", "cell")
-        .style("background", function (d) {
-            return d.children ? d.color : null;
-        })
         .call(cell)
         .append("div")
+        .style("background", function (d) {
+            if (d.parent) {
+                return d.parent['color'];
+            }
+        })
+        .attr("data-href", function (d) {
+
+            return d.link;
+        })
+        .call(cell)
         .text(function (d) {
 
             if (d.parent) {
@@ -52,7 +59,25 @@ d3.json("data/treemap.json", function (json) {
 
 
             //            return d.parent ? null : text;
-        });
+        }).append("div").attr("class", "number").text(function (d) {
+
+
+
+
+            return d.children ? null : d.size;
+
+
+
+
+            //            return d.parent ? null : text;
+        })
+
+
+    $('#treemap .cell > div').click(function () {
+        var href = $(this).data('href');
+        console.log(href);
+        window.open(href, '_blank');
+    })
 
 });
 

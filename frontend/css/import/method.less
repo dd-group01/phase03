@@ -1,6 +1,15 @@
+.circle {
+    background: linear-gradient(to left, black 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    z-index: 0;
+}
+
 .method {
+
     min-height: 100vh;
     background: @color3;
+
 
     overflow: hidden;
 
@@ -39,9 +48,11 @@
         font-size: 0.8rem;
         line-height: 0.8rem;
         opacity: 0.4;
-        color: @black;
+        color: @color3;
         box-shadow: 0px 0px 50px fade(@black, 30);
         transition: opacity @ease, box-shadow @ease, background @ease;
+        z-index: 1000;
+        position: relative;
 
         &:hover {
             background: @white;
@@ -51,11 +62,14 @@
 
 
     &_title {
+        z-index: 1000;
+        position: relative;
 
         padding: 50px 0 100px;
         max-width: 100%;
         font-size: 5rem;
         line-height: 5.2rem;
+        color: @blacke;
         font-family: @title;
         text-decoration: line-through;
         word-break: normal;
@@ -76,15 +90,15 @@
         z-index: 10000000;
         position: relative;
         font-family: @title;
-        margin: 0px 20vw;
+        margin: 0px 18vw;
         min-height: 100vh;
-        width: 60vw;
+        width: auto;
         bottom: 0;
         padding: 50px 2.5vw;
         color: @black;
 
         font-size: 1rem;
-        line-height: 1.5em;
+        line-height: 1.8em;
 
 
         @media @mobile {
@@ -99,11 +113,19 @@
     h3 {
         text-transform: uppercase;
         font-family: @title;
-        margin-bottom: 10px;
-        padding-top: 5px;
         letter-spacing: 1px;
         font-weight: 700;
         padding: 0px 0rem;
+
+        padding-top: 50px;
+        margin-top: 50px;
+        border-top: 6px double fade(@grey, 20);
+
+        &:first-child {
+            padding-top: 0;
+            margin-top: 0;
+            border-top: 0;
+        }
 
         @media @mobile {
             font-size: 1.1rem;
@@ -113,7 +135,7 @@
     }
 
     p {
-        margin-bottom: 25px;
+        margin: 25px 0;
 
         @media @mobile {
             font-size: 1.1rem;
@@ -126,7 +148,7 @@
         margin: 25px 0;
 
         .cell {
-            padding: 5px;
+
             border: solid 1px @white;
             font: 11px @title;
             text-transform: uppercase;
@@ -134,6 +156,26 @@
             overflow: hidden;
             position: absolute;
             text-indent: 0px;
+            transition: opacity @ease;
+
+            .number {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                font-size: 36px;
+                line-height: 36px;
+                opacity: 0.4;
+            }
+
+
+            & > div {
+                padding: 5px;
+            }
+
+            &:hover {
+                opacity: 0.6;
+                cursor: pointer;
+            }
 
             .source {
                 opacity: 0.3;
