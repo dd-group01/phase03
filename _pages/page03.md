@@ -51,7 +51,7 @@ number: 3
         </div>
             <div class="question" data-quest="4">
             <div class="module">
-                <div class="question_text">Are her gifts cheap <b>cheap</b>?</div>
+                <div class="question_text">Are her gifts <b>cheap</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="5">YES</div>
                     <div class="question_button_no" data-id="8">NO</div>
@@ -60,7 +60,7 @@ number: 3
         </div>
             <div class="question" data-quest="5">
             <div class="module">
-                <div class="question_text">Does she reject <b>cheap gifts</b>?</div>
+                <div class="question_text">Does she reject your <b>cheap gifts</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="6">YES</div>
                     <div class="question_button_no" data-id="7">NO</div>
@@ -97,11 +97,17 @@ number: 3
             <div class="question" data-quest="9">
             <div class="module">
                 <div class="question_text"><b>There's something strange...</b></div>
+                <div class="question_button">
+                      <div class="question_button_retry" data-id="0">RESET THE TEST</div>
+                </div>
             </div>
         </div>
-            <div class="question gold-digger" data-quest="10">
+        <div class="question gold-digger" data-quest="10">
             <div class="module">
                 <div class="question_text"><b>SHE IS A REAL gold digger, BRO!</b></div>
+                 <div class="question_button">
+                      <div class="question_button_retry" data-id="0">RESET THE TEST</div>
+                </div>
             </div>
         </div>
     </div>
