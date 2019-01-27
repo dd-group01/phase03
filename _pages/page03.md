@@ -13,7 +13,7 @@ number: 3
 
 <div class="fullscreen schema">
     <div class="bandersnatch">
-        <div class="question" data-quest="0">
+        <div class="question is-visible" data-quest="0">
             <div class="module">
                 <div class="question_text">Does she asks questions about your <b>job</b>?</div>
                 <div class="question_button">
