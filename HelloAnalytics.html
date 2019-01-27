@@ -36,11 +36,18 @@
                             endDate: 'today'
                         }],
                         dimensions: [{
-                            name: "ga:browser"
-                        }],
+                                name: "ga:source"
+                            },
+                            {
+                                name: "ga:medium"
+                            }
+                        ],
                         metrics: [{
-                            alias: "users",
+                            alias: "Users",
                             expression: "ga:users"
+                        }, {
+                            alias: "Session",
+                            expression: "ga:sessionDuration"
                         }]
 
                     }]
