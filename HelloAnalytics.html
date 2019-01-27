@@ -20,7 +20,7 @@
 
     <script>
         // Replace with your view ID.
-        var VIEW_ID = '187589482';
+        var VIEW_ID = '188808903';
 
         // Query the API and print the results to the page.
         function queryReports() {
@@ -36,8 +36,15 @@
                             endDate: 'today'
                         }],
                         metrics: [{
-                            expression: 'ga:users'
+                            expression: [{
+                                alias: "users",
+                                expression: "ga:users"
+                            }],
+                        }],
+                        dimensions: [{
+                            "name": "ga:source"
                         }]
+
                     }]
                 }
             }).then(displayResults, console.error.bind(console));
