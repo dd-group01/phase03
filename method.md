@@ -16,7 +16,7 @@ With the online proliferation of hate speech, there is an urgent need to talk ab
 
 ### The concept
 
-Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the <b>Anti-feminist Manifesto</b> as a flagship worth to be followed.
+Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the <b>Anti·Feminist Manifesto</b> as a flagship worth to be followed.
 
 The website’s strenght is focused on the textual part, that is taken from anti-fem websites and it’s presented, un-edited, to the users. The fact that this kind of content, hyperbolic and without any logic, is really made by some people, create a sense of dissociation and at the same time gives an unseen perspective on what anti-feminist means. A tree-map visualization can help to better understand where do the contents come from, for each website the treemap visualize the number of characters selected for the text. 
 
