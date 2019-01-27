@@ -27,6 +27,6 @@ function spawnShip(game) {
     game.append(ship)
 }
 
-setInterval(function () {
-    spawnShip(gameScreen)
-}, 100)
+//setInterval(function () {
+//    spawnShip(gameScreen)
+//}, 100)

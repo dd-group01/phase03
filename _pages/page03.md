@@ -13,17 +13,97 @@ number: 3
 
 <div class="fullscreen schema">
     <div class="bandersnatch">
-        
-        <div class="question" data-quest="1" data-path="1">
-        <div class="module">
-            <div class="question_text">Does she asks questions about your job?</div>
-            <div class="question_button">
-                <div class="question_button_yes">YES</div>
-                <div class="question_button_no">NO</div>
+        <div class="question" data-quest="0">
+            <div class="module">
+                <div class="question_text">Does she asks questions about your <b>job</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="1">YES</div>
+                    <div class="question_button_no" data-id="2">NO</div>
+                </div>
             </div>
         </div>
+        <div class="question" data-quest="1">
+            <div class="module">
+                <div class="question_text">Does she asks you about your <b>financial situation</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="2">YES</div>
+                    <div class="question_button_no" data-id="3">NO</div>
+                </div>
+            </div>
         </div>
-    
+           <div class="question" data-quest="2">
+            <div class="module">
+                <div class="question_text">Does she asks you about your <b>family's money</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="10">YES</div>
+                    <div class="question_button_no" data-id="3">NO</div>
+                </div>
+            </div>
+        </div>
+             <div class="question" data-quest="3">
+            <div class="module">
+                <div class="question_text">Does she asks for <b>expensive gifts</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="4">YES</div>
+                    <div class="question_button_no" data-id="8">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="4">
+            <div class="module">
+                <div class="question_text">Are her gifts cheap <b>cheap</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="5">YES</div>
+                    <div class="question_button_no" data-id="8">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="5">
+            <div class="module">
+                <div class="question_text">Does she reject <b>cheap gifts</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="6">YES</div>
+                    <div class="question_button_no" data-id="7">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="6">
+            <div class="module">
+                <div class="question_text">Does she ask you to <b>borrow her money</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="10">YES</div>
+                    <div class="question_button_no" data-id="7">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="7">
+            <div class="module">
+                <div class="question_text">Is her Amazon's cart full of <b>expensive stuff</b>?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="10">YES</div>
+                    <div class="question_button_no" data-id="9">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="8">
+            <div class="module">
+                <div class="question_text">Does she use her <b>phisical appareance</b> to ask you something?</div>
+                <div class="question_button">
+                    <div class="question_button_yes" data-id="10">YES</div>
+                    <div class="question_button_no" data-id="9">NO</div>
+                </div>
+            </div>
+        </div>
+            <div class="question" data-quest="9">
+            <div class="module">
+                <div class="question_text"><b>there's something strange</b></div>
+            </div>
+        </div>
+            <div class="question" data-quest="10">
+            <div class="module">
+                <div class="question_text"><b>gold digger</b></div>
+            </div>
+        </div>
     </div>
 </div>
 

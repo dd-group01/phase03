@@ -8,19 +8,24 @@
 
 
          $('#urbino circle').hover(function () {
-             $('.urbino-popup').toggleClass('is-visible')
+             var text = $(this).data('text');
+
+             $('.urbino-popup').html(text);
+             $('.urbino-popup').addClass('is-visible');
+         }, function () {
+             $('.urbino-popup').removeClass('is-visible');
          });
 
 
-         $('#urbino').on('mousemove', function (evt) {
-             var x = evt.pageX - $(this).offset().left + 10;
-             var y = evt.pageY - $(this).offset().top + +20;
-
-             $('.urbino-popup').css({
-                 top: y,
-                 left: x
-             });
-         })
+//         $('#urbino').on('mousemove', function (evt) {
+             //             var x = evt.pageX - $(this).offset().left + 10;
+             //             var y = evt.pageY - $(this).offset().top + +20;
+             //
+             //             $('.urbino-popup').css({
+             //                 top: y,
+             //                 left: x
+             //             });
+             //         })
 
 
 
