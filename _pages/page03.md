@@ -96,12 +96,12 @@ number: 3
         </div>
             <div class="question" data-quest="9">
             <div class="module">
-                <div class="question_text"><b>there's something strange</b></div>
+                <div class="question_text"><b>There's something strange...</b></div>
             </div>
         </div>
-            <div class="question" data-quest="10">
+            <div class="question gold-digger" data-quest="10">
             <div class="module">
-                <div class="question_text"><b>gold digger</b></div>
+                <div class="question_text"><b>SHE IS A REAL gold digger, BRO!</b></div>
             </div>
         </div>
     </div>

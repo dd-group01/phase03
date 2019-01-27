@@ -14,6 +14,13 @@
         box-sizing: border-box;
         transition: background @ease;
 
+        &.gold-digger {
+
+            animation: 0.3s blink2 infinite alternate;
+
+        }
+
+
         .module {
             padding: 0 2rem;
         }
@@ -92,4 +99,22 @@
     }
 
 
+}
+
+@keyframes blink2 {
+    0% {
+        background: @black;
+    }
+
+    50% {
+        background: @black;
+    }
+
+    51% {
+        background: #fbcc25;
+    }
+
+    100% {
+        background: #fbcc25;
+    }
 }
