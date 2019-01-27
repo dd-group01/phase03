@@ -35,14 +35,16 @@
                             startDate: '7daysAgo',
                             endDate: 'today'
                         }],
-                        metrics: [{
-                            expression: [{
-                                alias: "users",
-                                expression: "ga:users"
-                            }]
-                        }],
                         dimensions: [{
-                            "name": "ga:source"
+                                name: "ga:browser"
+                            },
+                            {
+                                name: "ga:segment"
+                            }
+                        ],
+                        metrics: [{
+                            alias: "users",
+                            expression: "ga:users"
                         }]
 
                     }]
