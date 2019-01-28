@@ -55,21 +55,7 @@ $(document).ready(function () {
     })
 
 
-
-
-    //    setTimeout(function () {
-    //        main.removeClass('is-blur');
-    //        loader.addClass('is-loaded');
-    //    }, 2000)
-
-    //    var rouletteFirst = true;
-    //    $('.is-end').click(function () {
-    //        if (rouletteFirst) {
-    //            roulette();
-    //            rouletteFirst = false;
-    //        }
-    //
-    //    })
+    initRoulette();
 
 
 })
@@ -116,78 +102,77 @@ function share() {
         e.preventDefault();
     });
 
+    $('.start.button').click(generate);
+
+
 }
 
-function refresh(social, num) {
+function refresh(num) {
 
-    console.log(social);
+    var fbLink = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FAFManifesto' + num,
+        twLink = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2FAFManifesto' + num,
+        igLink = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/ig.png',
+        stLink = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/st.png';
 
+    console.log(fbLink);
 
-    var link;
+    $('.fb').data('href', fbLink);
+    $('.tw').data('href', twLink);
+    $('.ig').data('href', igLink);
+    $('.st').data('href', stLink);
 
-    switch (social) {
-        case 'fb':
-            link = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2FAFManifesto' + num;
-            break;
-        case 'tw':
-            link = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2FAFManifesto' + num;
-            break;
-        case 'ig':
-            link = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/ig.png';
-            break;
-        case 'st':
-            link = 'https://dd-group01.github.io/phase03/frontend/img/share/' + num + '/st.png';
-            break;
-    }
+    console.log("FATTO");
 
-    $('.' + social).data('href', link);
+    share();
 
 }
 
 
 
-function roulette() {
+function initRoulette() {
 
-    var parent = $(".page_roulette_img");
+    var parent = $(".page_roulette_img_images");
     var divs = parent.children();
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
-    parent.find("img:nth-last-child(-n+15)").remove();
+    parent.find("img:first-child").addClass('is-visible');
+
+    var ID = parent.find("img:first-child").data("number");
+
+    console.log(ID);
+    refresh(ID);
+}
 
 
 
-    share();
+function generate() {
 
+    $('.page_roulette_img_loading').addClass("is-visible");
+    $('.page_roulette_share, .page_roulette_img_images').addClass("is-disabled");
 
-    var option = {
-        speed: 100,
-        duration: 1,
-        startCallback: function () {
-
-            $('.page_roulette_share').addClass('is-disabled');
-
-        },
-        slowDownCallback: function () {},
-        stopCallback: function ($stopElm) {
-            var ID = $stopElm.data('number');
-            console.log(ID);
-            refresh('fb', ID);
-            refresh('tw', ID);
-            refresh('ig', ID);
-            refresh('st', ID);
-            $('.page_roulette_share').removeClass('is-disabled');
-        }
+    var parent = $(".page_roulette_img_images");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
 
-    var rouletter = $('.page_roulette_img')
-    rouletter.roulette(option);
-    rouletter.roulette('start');
+    setTimeout(function () {
+        $('.page_roulette_img_images img').removeClass("is-visible");
+        parent.find("img:first-child").addClass('is-visible');
+
+        $('.page_roulette_img_loading').removeClass("is-visible");
+        $('.page_roulette_share, .page_roulette_img_images').removeClass("is-disabled");
 
 
-    $('.start').click(function () {
-        rouletter.roulette('start');
-    });
+        var ID = parent.find("img:first-child").data("number");
+
+        console.log(ID);
+        refresh(ID);
+
+    }, 1000)
+
+
 
 
 }

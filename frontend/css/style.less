@@ -616,8 +616,8 @@ strong {
     &_roulette {
         padding-top: 50px;
         display: flex;
-        align-content: flex-start;
-        align-items: flex-start;
+        align-content: center;
+        align-items: center;
         justify-content: space-between;
 
         @media @mobile {
@@ -626,11 +626,65 @@ strong {
 
         &_img {
             height: auto;
-            max-width: 400px;
+            width: 400px;
+            position: relative;
 
             @media @alice {
                 max-width: 200px;
             }
+
+
+            &_images {
+                flex-grow: 2;
+                border: 2px solid @grey;
+                position: relative;
+
+                transition: opacity @ease;
+
+                &.is-disabled {
+                    opacity: 0.3;
+                    pointer-events: none;
+
+                }
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: none;
+
+                    &.is-visible {
+                        display: block;
+                    }
+                }
+            }
+
+
+
+            &_loading {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+                z-index: 1000;
+                opacity: 0;
+                transition: opacity @ease;
+
+                &.is-visible {
+                    opacity: 1;
+                }
+
+                img {
+                    width: 50px !important;
+                    animation: rotate 0.5s infinite linear;
+                }
+            }
+
         }
 
         .button {
@@ -767,17 +821,7 @@ strong {
 
 
 
-        &_img {
-            flex-grow: 2;
-            border: 2px solid @grey;
-            position: relative;
-        }
 
-
-        img {
-            width: 100%;
-            height: auto;
-        }
     }
 
     &_footer {
@@ -986,5 +1030,15 @@ strong {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
     }
 }

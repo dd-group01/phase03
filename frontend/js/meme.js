@@ -40,11 +40,7 @@ $carousel.on('lazyLoad.flickity', function (event, cellElement) {
     setTimeout(function () {
         main.removeClass('is-blur');
         loader.addClass('is-loaded');
-        if (rouletteFirst) {
-            roulette();
-            rouletteFirst = false;
-        }
-    }, 2000)
+    }, 1000)
 
 
 
