@@ -124,13 +124,14 @@ function refresh(num) {
 
     console.log("FATTO");
 
-    share();
-
 }
 
 
 
 function initRoulette() {
+
+    share();
+
 
     var parent = $(".page_roulette_img_images");
     var divs = parent.children();
