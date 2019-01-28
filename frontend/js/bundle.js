@@ -97,9 +97,10 @@ function share() {
 
 
     $('.ig, .st').click(function (e) {
+        e.preventDefault();
         var href = $(this).data('href');
         window.open(href, '_blank');
-        e.preventDefault();
+
     });
 
     $('.start.button').click(generate);
