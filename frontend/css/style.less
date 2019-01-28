@@ -703,6 +703,8 @@ strong {
             transition: opacity @ease;
             cursor: pointer;
 
+
+
             &:hover {
                 opacity: 0.6;
             }
@@ -766,6 +768,12 @@ strong {
 
                     &:hover {
                         opacity: 0.6;
+                    }
+
+                    @media @mobile {
+                        font-size: 10px;
+                        padding: 10px 15px;
+                        min-width: auto;
                     }
 
                 }
