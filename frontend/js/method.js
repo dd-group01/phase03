@@ -63,6 +63,12 @@ function queryReports() {
     }).then(displayResults, console.error.bind(console));
 }
 
+function displayResults(response) {
+    var formattedJson = JSON.stringify(response.result, null, 2);
+    document.getElementById('query-output').value = formattedJson;
+    console.log(response);
+}
+
 
 //$.getJSON("https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A188808903&start-date=30daysAgo&end-date=today&metrics=ga%3Ausers%2Cga%3AsessionDuration&dimensions=ga%3Asource%2Cga%3Amedium&access_token=ya29.GlyhBvxcg-yZ9cZUnStxaepnpvoG_Sxg8_E6WyW3AL2FkIhUobI34IxxFUOWE8Kg_5akJxjWhJXynzVe_sYGR2RZq85yJJeczRmh8Olse0oeI1cYtp8AYXsE7J6Gkw")
 //    .then(function (data) {
