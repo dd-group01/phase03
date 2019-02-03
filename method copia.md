@@ -39,6 +39,20 @@ We included text descriptions, which are composed with comments found on the ant
 A note on language: we recognize and respect that many words are offensive without just context. Those words are just reported to increase the power of the project and sensitize the users, without any other intent.
 
 
+### Visitors of the website
+
+In order to track its dissemination potential of the project we created some simple visualization to register some interesting data about the users that visit and share the link. We are able, thanks to this process, to see the resonance of “the AntiFeminist Manifesto” and prove the feasibility of campaigns of this kind.
+
+<div class="authorization">
+    <p>SIGN IN TO SEE DATA</p>
+    <p class="g-signin2" data-onsuccess="queryReports"></p>
+</div>
+
+<div id="pre-user">
+    <h1><span class="total-users"></span> TOTAL VISITORS from <span class="since">07 FEB</span> untill today</h1>
+</div>    
+<div id="users"></div>
+
 ### The campaign
 
 The launching campaign of the project consists in a series of provocative posters in which the pillars of the anti-feminist’s believe are postulated. On the affiche is simply written in large letters: <b>“All women are”</b> followed by a sexist insult.
