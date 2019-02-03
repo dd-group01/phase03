@@ -99,42 +99,42 @@ function displayResults(response) {
 
 }
 
-
-
-
-//$.getJSON("https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A188808903&start-date=30daysAgo&end-date=today&metrics=ga%3Ausers%2Cga%3AsessionDuration&dimensions=ga%3Asource%2Cga%3Amedium&access_token=ya29.GlyhBvxcg-yZ9cZUnStxaepnpvoG_Sxg8_E6WyW3AL2FkIhUobI34IxxFUOWE8Kg_5akJxjWhJXynzVe_sYGR2RZq85yJJeczRmh8Olse0oeI1cYtp8AYXsE7J6Gkw")
-//    .then(function (data) {
 //
 //
-//     
-//        var since = data["query"]["start-date"];
 //
+////$.getJSON("https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A188808903&start-date=30daysAgo&end-date=today&metrics=ga%3Ausers%2Cga%3AsessionDuration&dimensions=ga%3Asource%2Cga%3Amedium&access_token=ya29.GlyhBvxcg-yZ9cZUnStxaepnpvoG_Sxg8_E6WyW3AL2FkIhUobI34IxxFUOWE8Kg_5akJxjWhJXynzVe_sYGR2RZq85yJJeczRmh8Olse0oeI1cYtp8AYXsE7J6Gkw")
+////    .then(function (data) {
+////
+////
+////     
+////        var since = data["query"]["start-date"];
+////
+////
+//for (var k in data["rows"]) {
+//    if (data["rows"][k][0] === "share") {
 //
-for (var k in data["rows"]) {
-    if (data["rows"][k][0] === "share") {
-
-        shareUser += parseInt(data["rows"][k][2]);
-    } else if (data["rows"][k][0] === "(direct)") {
-
-        directUser += parseInt(data["rows"][k][2])
-
-    }
-}
-
-totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
-
-$("#pre-user span.total-users").html(totalUser);
-$(".since").html(since);
-
-totalUser = totalUser - shareUser - directUser;
-
-data["rows"]
-
-console.log(directUser, shareUser, totalUser);
-
-makeUserViz(directUser, shareUser, totalUser);
+//        shareUser += parseInt(data["rows"][k][2]);
+//    } else if (data["rows"][k][0] === "(direct)") {
 //
-//    });
+//        directUser += parseInt(data["rows"][k][2])
+//
+//    }
+//}
+//
+//totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
+//
+//$("#pre-user span.total-users").html(totalUser);
+//$(".since").html(since);
+//
+//totalUser = totalUser - shareUser - directUser;
+//
+//data["rows"]
+//
+//console.log(directUser, shareUser, totalUser);
+//
+//makeUserViz(directUser, shareUser, totalUser);
+////
+////    });
 
 
 function makeUserViz(directUser, shareUser, totalUser) {
