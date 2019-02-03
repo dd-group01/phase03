@@ -16,9 +16,9 @@ With the online proliferation of hate speech, there is an urgent need to talk ab
 
 ### The concept
 
-Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the <b>Anti·Feminist Manifesto</b> as a flagship worth to be followed.
+Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female's activism, using the <b>Antifeminist Manifesto</b> as a flagship worth to be followed.
 
-The website’s strenght is focused on the textual part, that is taken from anti-fem websites and it’s presented, un-edited, to the users. The fact that this kind of content, hyperbolic and without any logic, is really made by some people, create a sense of dissociation and at the same time gives an unseen perspective on what anti-feminist means. A tree-map visualization can help to better understand where do the contents come from, for each website the treemap visualize the number of characters selected for the text. 
+The website’s strenght is focused on the textual part, that is taken from anti-feminist websites and it’s presented, un-edited, to the users. The fact that this kind of content, hyperbolic and without any logic, is really made by some people, create a sense of dissociation and at the same time gives an unseen perspective on what anti-feminists means. A tree-map visualization can help to better understand where do the contents come from, for each website the treemap visualize the number of characters selected for the text. 
 
 {% include_relative _pages/visualization/method/treemap.html %}
 
@@ -32,9 +32,9 @@ The Anti-Feminist Manifesto was born as part of the Final Synthesis Lab final pr
 
 “The Anti-feminist Manifesto” is entirely designed to create a distorted view of reality. The contents are absurd but, at the same time unique, so their job is to take the user through the path defined by the five statements and create a <b>sense of alienation and astonishment</b>.
 
-Each statement summarize the best of the comments online and it is proposed with the same repeated formula to represents a sort of collection of commandments, rules to define women and their role in the society. The statements represent the main <b>arguments used by anti-fem public</b>, who reveal themselves misogynists because of such offensive content.
+Each statement summarize the best of the comments online and it is proposed with the same repeated formula to represents a sort of collection of commandments, rules to define women and their role in the society. The statements represent the main <b>arguments used by anti-feminist public</b>, who reveal themselves misogynists because of such offensive content.
 
-We included text descriptions, which are composed with comments found on the anti-fem communities; even the visual illustrations and graphics are the result of elaboration of those contents. Going deeply, the alienation effect is much more evident, thanks to the interactive parts whose job is to improve the usability.
+We included text descriptions, which are composed with comments found on the anti-feminist communities; even the visual illustrations and graphics are the result of elaboration of those contents. Going deeply, the alienation effect is much more evident, thanks to the interactive parts whose job is to improve the usability.
 
 A note on language: we recognize and respect that many words are offensive without just context. Those words are just reported to increase the power of the project and sensitize the users, without any other intent.
 

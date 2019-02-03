@@ -64,9 +64,39 @@ function queryReports() {
     }).then(displayResults, console.error.bind(console));
 }
 
-function displayResults(response) {
-    var formattedJson = JSON.stringify(response, null, 2);
-    console.log(formattedJson);
+function displayResults(data) {
+    var formattedJson = JSON.stringify(data, null, 2);
+    console.log(data);
+
+    var shareUser = 0,
+        totalUser = 0,
+        directUser = 0;
+
+
+    for (var k in data["rows"]) {
+        if (data["rows"][k][0] === "share") {
+
+            shareUser += parseInt(data["rows"][k][2]);
+        } else if (data["rows"][k][0] === "(direct)") {
+
+            directUser += parseInt(data["rows"][k][2])
+
+        }
+    }
+
+    totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
+
+    $("#pre-user span.total-users").html(totalUser);
+//    $(".since").html(since);
+    totalUser = totalUser - shareUser - directUser;
+
+    data["rows"]
+
+    console.log(directUser, shareUser, totalUser);
+
+    makeUserViz(directUser, shareUser, totalUser);
+
+
 }
 
 
@@ -76,36 +106,33 @@ function displayResults(response) {
 //    .then(function (data) {
 //
 //
-//        var shareUser = 0,
-//            totalUser = 0,
-//            directUser = 0;
-//
+//     
 //        var since = data["query"]["start-date"];
 //
 //
-//        for (var k in data["rows"]) {
-//            if (data["rows"][k][0] === "share") {
-//
-//                shareUser += parseInt(data["rows"][k][2]);
-//            } else if (data["rows"][k][0] === "(direct)") {
-//
-//                directUser += parseInt(data["rows"][k][2])
-//
-//            }
-//        }
-//
-//        totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
-//
-//        $("#pre-user span.total-users").html(totalUser);
-//        $(".since").html(since);
-//
-//        totalUser = totalUser - shareUser - directUser;
-//
-//        data["rows"]
-//
-//        console.log(directUser, shareUser, totalUser);
-//
-//        makeUserViz(directUser, shareUser, totalUser);
+for (var k in data["rows"]) {
+    if (data["rows"][k][0] === "share") {
+
+        shareUser += parseInt(data["rows"][k][2]);
+    } else if (data["rows"][k][0] === "(direct)") {
+
+        directUser += parseInt(data["rows"][k][2])
+
+    }
+}
+
+totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
+
+$("#pre-user span.total-users").html(totalUser);
+$(".since").html(since);
+
+totalUser = totalUser - shareUser - directUser;
+
+data["rows"]
+
+console.log(directUser, shareUser, totalUser);
+
+makeUserViz(directUser, shareUser, totalUser);
 //
 //    });
 
