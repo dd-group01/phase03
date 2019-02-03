@@ -43,9 +43,13 @@ A note on language: we recognize and respect that many words are offensive witho
 
 In order to track its dissemination potential of the project we created some simple visualization to register some interesting data about the users that visit and share the link. We are able, thanks to this process, to see the resonance of “the AntiFeminist Manifesto” and prove the feasibility of campaigns of this kind.
 
-<p class="g-signin2" data-onsuccess="queryReports"></p>
+<div class="authorization">
+    <p>SIGN IN TO SEE DATA</p>
+    <p class="g-signin2" data-onsuccess="queryReports"></p>
+</div>
+
 <div id="pre-user">
-    <h1><span class="total-users"></span> TOTAL VISITORS from <span class="since"></span> untill today</h1>
+    <h1><span class="total-users"></span> TOTAL VISITORS from <span class="since">07 FEB</span> untill today</h1>
 </div>    
 <div id="users"></div>
 

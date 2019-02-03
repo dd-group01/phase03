@@ -65,8 +65,10 @@ function queryReports() {
 }
 
 function displayResults(response) {
+    $('.authorization').addClass("is-hidden");
+
     var formattedJson = response.result.reports;
-    var data = formattedJson;
+    var data = formattedJson[0]["data"];
 
 
     console.log(data);
@@ -77,17 +79,21 @@ function displayResults(response) {
 
 
     for (var k in data["rows"]) {
-        if (data["rows"][k][0] === "share") {
 
-            shareUser += parseInt(data["rows"][k][2]);
-        } else if (data["rows"][k][0] === "(direct)") {
+        console.log(data["rows"][k]["dimensions"]);
 
-            directUser += parseInt(data["rows"][k][2])
+
+        if (data["rows"][k]["dimensions"][0] === "share") {
+            console.log(parseInt(data["rows"][k]["metrics"][0]["values"]));
+            shareUser += parseInt(data["rows"][k]["metrics"][0]["values"]);
+        } else if (data["rows"][k]["dimensions"][0] === "(direct)") {
+
+            directUser += parseInt(data["rows"][k]["metrics"][0]["values"]);
 
         }
     }
 
-    totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
+    totalUser = parseInt(data["totals"][0]["values"]);
 
     $("#pre-user span.total-users").html(totalUser);
     //    $(".since").html(since);
@@ -297,5 +303,7 @@ function makeUserViz(directUser, shareUser, totalUser) {
         })
         .attr("height", x.rangeBand())
 
+
+    $('#pre-user, #user').addClass("is-visible");
 
 }

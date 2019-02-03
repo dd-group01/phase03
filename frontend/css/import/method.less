@@ -311,6 +311,11 @@
         padding-bottom: 10px;
         border-bottom: 2px dotted @black;
         text-transform: uppercase;
+        display: none;
+
+        &.is-visible {
+            display: block;
+        }
 
         span.total-users {
             color: #FFAD03;
@@ -321,6 +326,38 @@
             border-bottom: 1px solid @black;
         }
 
+    }
+
+
+    .authorization {
+        overflow: hidden;
+        text-align: center;
+        background: #f0f0f0;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 25px;
+
+        &.is-hidden {
+            display: none;
+        }
+
+        p:first-child {
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        p.g-signin2 {}
+    }
+
+
+    #user {
+        display: none;
+
+        &.is-visible {
+            display: block;
+        }
     }
 
 
