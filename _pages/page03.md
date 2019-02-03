@@ -15,6 +15,7 @@ number: 3
     <div class="bandersnatch">
         <div class="question is-visible" data-quest="0">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/01.png' | relative_url}}"></div>
                 <div class="question_text">Does she asks questions about your <b>job</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="1">YES</div>
@@ -24,6 +25,7 @@ number: 3
         </div>
         <div class="question" data-quest="1">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/02.png' | relative_url}}"></div>
                 <div class="question_text">Does she asks you about your <b>financial situation</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="2">YES</div>
@@ -33,6 +35,7 @@ number: 3
         </div>
            <div class="question" data-quest="2">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/03.png' | relative_url}}"></div>
                 <div class="question_text">Does she asks you about your <b>family's money</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="10">YES</div>
@@ -42,6 +45,7 @@ number: 3
         </div>
              <div class="question" data-quest="3">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/04.png' | relative_url}}"></div>
                 <div class="question_text">Does she asks for <b>expensive gifts</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="4">YES</div>
@@ -51,6 +55,7 @@ number: 3
         </div>
             <div class="question" data-quest="4">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/05.png' | relative_url}}"></div>
                 <div class="question_text">Are her gifts <b>cheap</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="5">YES</div>
@@ -60,6 +65,7 @@ number: 3
         </div>
             <div class="question" data-quest="5">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/06.png' | relative_url}}"></div>
                 <div class="question_text">Does she reject your <b>cheap gifts</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="6">YES</div>
@@ -69,6 +75,7 @@ number: 3
         </div>
             <div class="question" data-quest="6">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/07.png' | relative_url}}"></div>
                 <div class="question_text">Does she ask you to <b>borrow her money</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="10">YES</div>
@@ -78,6 +85,7 @@ number: 3
         </div>
             <div class="question" data-quest="7">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/04.png' | relative_url}}"></div>
                 <div class="question_text">Is her Amazon's cart full of <b>expensive stuff</b>?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="10">YES</div>
@@ -87,6 +95,7 @@ number: 3
         </div>
             <div class="question" data-quest="8">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/08.png' | relative_url}}"></div>
                 <div class="question_text">Does she use her <b>phisical appareance</b> to ask you something?</div>
                 <div class="question_button">
                     <div class="question_button_yes" data-id="10">YES</div>
@@ -104,6 +113,7 @@ number: 3
         </div>
         <div class="question gold-digger" data-quest="10">
             <div class="module">
+                <div class="question_image"><img src="{{ 'frontend/img/page03/end.png' | relative_url}}"></div>
                 <div class="question_text"><b>SHE IS A REAL gold digger, BRO!</b></div>
                  <div class="question_button">
                       <div class="question_button_retry" data-id="0">RESET THE TEST</div>

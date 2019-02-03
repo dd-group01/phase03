@@ -34,8 +34,7 @@
         </div>
 
         <div class="method_content">
-            <p class="g-signin2" data-onsuccess="queryReports"></p>
-
+<!--<p class="g-signin2" data-onsuccess="queryReports"></p>-->
             {{content}}
         </div>
 
@@ -81,43 +80,42 @@
     <script src="{{ 'frontend/js/treemap.js' | relative_url }}"></script>
 
     <script>
-        // Replace with your view ID.
-        var VIEW_ID = '188808903';
-
-        // Query the API and print the results to the page.
-        function queryReports() {
-            gapi.client.request({
-                path: '/v4/reports:batchGet',
-                root: 'https://analyticsreporting.googleapis.com/',
-                method: 'POST',
-                body: {
-                    reportRequests: [{
-                        viewId: VIEW_ID,
-                        dateRanges: [{
-                            startDate: '7daysAgo',
-                            endDate: 'today'
-                        }],
-                        dimensions: [{
-                            name: "ga:source"
-                        }],
-                        metrics: [{
-                            alias: "Users",
-                            expression: "ga:users"
-                        }, {
-                            alias: "Session",
-                            expression: "ga:sessionDuration"
-                        }]
-
-                    }]
-                }
-            }).then(displayResults, console.error.bind(console));
-        }
-
-        function displayResults(response) {
-            var formattedJson = JSON.stringify(response.result, null, 2);
-            document.getElementById('query-output').value = formattedJson;
-        }
-
+// // Replace with your view ID.
+// var VIEW_ID = '188808903';
+//
+// // Query the API and print the results to the page.
+// function queryReports() {
+// gapi.client.request({
+// path: '/v4/reports:batchGet',
+// root: 'https://analyticsreporting.googleapis.com/',
+// method: 'POST',
+// body: {
+// reportRequests: [{
+// viewId: VIEW_ID,
+// dateRanges: [{
+// startDate: '7daysAgo',
+// endDate: 'today'
+// }],
+// dimensions: [{
+// name: "ga:source"
+// }],
+// metrics: [{
+// alias: "Users",
+// expression: "ga:users"
+// }, {
+// alias: "Session",
+// expression: "ga:sessionDuration"
+// }]
+//
+// }]
+// }
+// }).then(displayResults, console.error.bind(console));
+// }
+//
+// function displayResults(response) {
+// var formattedJson = JSON.stringify(response.result, null, 2);
+// document.getElementById('query-output').value = formattedJson;
+// }
     </script>
 
     <!-- Load the JavaScript API client and Sign-in library. -->

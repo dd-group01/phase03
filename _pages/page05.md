@@ -9,7 +9,7 @@ number: 5
 
 ### That's bad design right there, mr. God!
 <section class="urbino" id="urbino">
-    <div class="urbino-popup">ciaone</div>
+    <div class="urbino-popup"></div>
     
     
 </section>
