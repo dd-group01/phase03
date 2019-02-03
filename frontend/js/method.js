@@ -65,11 +65,11 @@ function queryReports() {
 }
 
 function displayResults(response) {
-    var formattedJson = JSON.stringify(response.result.reports.data, null, 2);
+    var formattedJson = JSON.stringify(response.result.reports, null, 2);
     var data = formattedJson;
 
 
-    console.log(data);
+    console.log(data["rows"]);
 
     var shareUser = 0,
         totalUser = 0,
