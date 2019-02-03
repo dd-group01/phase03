@@ -69,7 +69,7 @@ function displayResults(response) {
     var data = formattedJson;
 
 
-    console.log(data["rows"]);
+    console.log(data);
 
     var shareUser = 0,
         totalUser = 0,
