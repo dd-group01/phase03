@@ -64,9 +64,9 @@ function queryReports() {
     }).then(displayResults, console.error.bind(console));
 }
 
-function displayResults(data) {
-    var formattedJson = JSON.stringify(data, null, 2);
-    console.log(data);
+function displayResults(response) {
+    var formattedJson = JSON.stringify(response, null, 2);
+    var data = response;
 
     var shareUser = 0,
         totalUser = 0,
@@ -87,7 +87,7 @@ function displayResults(data) {
     totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
 
     $("#pre-user span.total-users").html(totalUser);
-//    $(".since").html(since);
+    //    $(".since").html(since);
     totalUser = totalUser - shareUser - directUser;
 
     data["rows"]
