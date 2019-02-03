@@ -32,43 +32,74 @@ function spawnShip(game) {
 //}, 100)
 
 
-$.getJSON("https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A188808903&start-date=30daysAgo&end-date=today&metrics=ga%3Ausers%2Cga%3AsessionDuration&dimensions=ga%3Asource%2Cga%3Amedium&access_token=ya29.GlyhBvxcg-yZ9cZUnStxaepnpvoG_Sxg8_E6WyW3AL2FkIhUobI34IxxFUOWE8Kg_5akJxjWhJXynzVe_sYGR2RZq85yJJeczRmh8Olse0oeI1cYtp8AYXsE7J6Gkw")
-    .then(function (data) {
+var VIEW_ID = '188808903';
 
+// Query the API and print the results to the page.
+function queryReports() {
+    gapi.client.request({
+        path: '/v4/reports:batchGet',
+        root: 'https://analyticsreporting.googleapis.com/',
+        method: 'POST',
+        body: {
+            reportRequests: [{
+                viewId: VIEW_ID,
+                dateRanges: [{
+                    startDate: '30daysAgo',
+                    endDate: 'today'
+                        }],
+                dimensions: [{
+                    name: "ga:source"
+                        }],
+                metrics: [{
+                    alias: "Users",
+                    expression: "ga:users"
+                        }, {
+                    alias: "Session",
+                    expression: "ga:sessionDuration"
+                        }]
 
-        var shareUser = 0,
-            totalUser = 0,
-            directUser = 0;
-
-        var since = data["query"]["start-date"];
-
-
-        for (var k in data["rows"]) {
-            if (data["rows"][k][0] === "share") {
-
-                shareUser += parseInt(data["rows"][k][2]);
-            } else if (data["rows"][k][0] === "(direct)") {
-
-                directUser += parseInt(data["rows"][k][2])
-
-            }
+                    }]
         }
+    }).then(displayResults, console.error.bind(console));
+}
 
-        totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
 
-        $("#pre-user span.total-users").html(totalUser);
-        $(".since").html(since);
-
-        totalUser = totalUser - shareUser - directUser;
-
-        data["rows"]
-
-        console.log(directUser, shareUser, totalUser);
-
-        makeUserViz(directUser, shareUser, totalUser);
-
-    });
-
+//$.getJSON("https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A188808903&start-date=30daysAgo&end-date=today&metrics=ga%3Ausers%2Cga%3AsessionDuration&dimensions=ga%3Asource%2Cga%3Amedium&access_token=ya29.GlyhBvxcg-yZ9cZUnStxaepnpvoG_Sxg8_E6WyW3AL2FkIhUobI34IxxFUOWE8Kg_5akJxjWhJXynzVe_sYGR2RZq85yJJeczRmh8Olse0oeI1cYtp8AYXsE7J6Gkw")
+//    .then(function (data) {
+//
+//
+//        var shareUser = 0,
+//            totalUser = 0,
+//            directUser = 0;
+//
+//        var since = data["query"]["start-date"];
+//
+//
+//        for (var k in data["rows"]) {
+//            if (data["rows"][k][0] === "share") {
+//
+//                shareUser += parseInt(data["rows"][k][2]);
+//            } else if (data["rows"][k][0] === "(direct)") {
+//
+//                directUser += parseInt(data["rows"][k][2])
+//
+//            }
+//        }
+//
+//        totalUser = parseInt(data["totalsForAllResults"]["ga:users"]);
+//
+//        $("#pre-user span.total-users").html(totalUser);
+//        $(".since").html(since);
+//
+//        totalUser = totalUser - shareUser - directUser;
+//
+//        data["rows"]
+//
+//        console.log(directUser, shareUser, totalUser);
+//
+//        makeUserViz(directUser, shareUser, totalUser);
+//
+//    });
 
 
 function makeUserViz(directUser, shareUser, totalUser) {
