@@ -65,7 +65,7 @@ function queryReports() {
 }
 
 function displayResults(response) {
-    var formattedJson = JSON.stringify(response.result.reports, null, 2);
+    var formattedJson = response.result.reports;
     var data = formattedJson;
 
 
