@@ -68,6 +68,9 @@ function displayResults(response) {
     var formattedJson = JSON.stringify(response, null, 2);
     var data = response;
 
+
+    console.log(data)
+
     var shareUser = 0,
         totalUser = 0,
         directUser = 0;
