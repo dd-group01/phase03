@@ -13,11 +13,10 @@ db.createTable({
     }
 });
 
-
-db.tables(function (tables) {
-    console.log(tables);
-});
-
+//
+//db.tables(function (tables) {
+//    console.log(tables);
+//});
 
 
 var getUrlParameter = function getUrlParameter(sParam) {
