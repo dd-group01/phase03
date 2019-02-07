@@ -165,7 +165,8 @@ strong {
 
 
 
-    &_text {
+    &_text,
+    &_mobile {
         font-size: 10px;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -174,6 +175,17 @@ strong {
         font-family: @title;
         text-align: center;
         padding: 0px 50px;
+    }
+
+    &_mobile {
+        padding-top: 25px;
+        color: @grey;
+        font-size: 8px;
+        display: none;
+
+        @media @mobile {
+            display: block;
+        }
     }
 
 
