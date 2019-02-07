@@ -59,6 +59,11 @@
             background: @white;
             opacity: 1;
         }
+
+        @media @mobile {
+            font-size: 0.5rem;
+            padding: 25px;
+        }
     }
 
 
@@ -293,8 +298,9 @@
             flex-direction: row;
 
             img {
-                max-height: 200px;
-                width: auto;
+                max-width: 100px;
+                height: auto;
+                max-height: 100px;
             }
         }
 
