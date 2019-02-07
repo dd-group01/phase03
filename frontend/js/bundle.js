@@ -90,16 +90,23 @@ function asterisk() {
 function share() {
 
     $('.fb, .tw').click(function (e) {
-        e.preventDefault();
-        ga('send', 'event', 'button', 'click', "sharing");
+
+        gtag('event', 'share', {
+            'event_label': 'SHARING',
+            'event_category': 'sharing'
+        });
+
         window.open($(this).data('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
         return false;
     });
 
 
     $('.ig, .st').click(function (e) {
-        e.preventDefault();
-        ga('send', 'event', 'button', 'click', "sharing");
+
+        gtag('event', 'share', {
+            'event_label': 'SHARING',
+            'event_category': 'sharing'
+        });
 
         var href = $(this).data('href');
         window.open(href, '_blank');
