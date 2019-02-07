@@ -366,5 +366,89 @@
         }
     }
 
+    .previous {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        &-link {
+            width: 50%;
+            height: 250px;
+            position: relative;
+            background-color: #f0f0f0;
+            background-size: cover;
+            background-position: center center;
+
+            @media @mobile {
+                width: 100%;
+                height: 80vw;
+                margin-bottom: 20px;
+            }
+
+
+
+            &-data {
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: fade(@black, 80);
+                transition: opacity @ease;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: @white;
+
+                @media @mobile {
+                    opacity: 1;
+                }
+
+                h2 {
+                    color: @grey;
+                    font-size: 10px;
+                    letter-spacing: 5px;
+                }
+
+
+                h1 {
+                    letter-spacing: 2px;
+                }
+
+                a {
+                    padding: 10px 30px;
+                    text-decoration: none;
+                    border-radius: 50px;
+                    border: 1px solid @white;
+                    font-size: 10px;
+                    margin-top: 20px;
+                    letter-spacing: 2px;
+                    transition: opacity @ease;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
 
 }
