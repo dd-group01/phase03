@@ -17,15 +17,21 @@
          });
 
 
-//         $('#urbino').on('mousemove', function (evt) {
-             //             var x = evt.pageX - $(this).offset().left + 10;
-             //             var y = evt.pageY - $(this).offset().top + +20;
-             //
-             //             $('.urbino-popup').css({
-             //                 top: y,
-             //                 left: x
-             //             });
-             //         })
+
+         $('#urbino circle').click(function () {
+             var $this = $(this);
+
+             if ($(window).width() < 600) {
+                 var text = $(this).data('text');
+                 $('#urbino circle').removeClass("is-active");
+                 $('.urbino-popup-mobile').html(text).slideDown();
+                 $this.addClass("is-active");
+
+             }
+             //             $('.urbino-popup').addClass('is-visible');
+         });
+
+
 
 
 
