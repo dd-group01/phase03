@@ -1,13 +1,20 @@
 #calendar {
+    position: relative;
 
     .st0 {
         fill: @black  !important;
+    }
+
+    #other {
+        pointer-events: none;
     }
 
     g[id*="x32"] {
         animation: blink infinite 2s;
         cursor: pointer;
         transition: opacity @ease;
+
+
 
 
         &.is-hover {
@@ -57,11 +64,27 @@
 
 }
 
+.calendarpopup-mobile {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background: @black;
+    color: @color1;
+    padding: 25px;
+    font-family: @title;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: none;
+    pointer-events: none;
+    transition: opacity @ease;
+
+
+}
 
 
 
 .calendarpopup {
-    position: fixed;
+    position: absolute;
     max-width: 300px;
     height: auto;
     background: @black;
@@ -76,6 +99,10 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity @ease;
+
+    @media @mobile {
+        display: none;
+    }
 
     &.is-visible {
         opacity: 1;
