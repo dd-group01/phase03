@@ -17,7 +17,7 @@ Each statement summarizes the best of the comments online and it is proposed wit
 ### The concept
 
 Analyzing the web is easy to find well-organized communities and groups of users against women. The aim of this project is to bring to the attention the opinion of small communities and their vision of female’s activism, using <b>The Anti·Feminist Manifesto</b> as a flagship worth to be followed.
-The website’s strenght is focused on the textual part; the fact that this kind of content, hyperbolic and without any logic, is really made by some people, create a sense of dissociation and at the same time gives an unseen perspective on what anti-feminists means. A tree-map visualization can help to better understand where the content come from, for each website the treemap visualize the number of characters selected for the text.
+The website’s strenght is focused on the textual part; the fact that this kind of content, hyperbolic and without any logic, is really made by some people, create a sense of dissociation and at the same time gives an unseen perspective on what anti-feminists means. A tree-map visualization can help to better understand where the content come from, for each website the treemap visualize the number of characters selected for the text. We used <b>3185 characters</b> for the whole website. 
 
 {% include_relative _pages/visualization/method/treemap.html %}
 
@@ -54,3 +54,12 @@ The outbreak of social media provided a new and free-access platform for people 
 ### The campaign
 
 The launching campaign of the project consists in a series of provocative posters in which the pillars of the anti-feminist’s believe are postulated. No further clues are given the reaction should be astonishment and disdain; the <b>provocative</b> effect should be maximized by the absence of an explicative payoff and push the reader to follow the link to The Anti·Feminist Manifesto. Eventually the user discovers the real aim of the project and shares the message through a post on different social media.
+
+
+<div class="slideshow">
+    <div class="slide"><img src="{{ 'frontend/01.jpg' | relative_url }}"></div>
+        <div class="slide"><img src="{{ 'frontend/02.jpg' | relative_url }}"></div>
+    <div class="slide"><img src="{{ 'frontend/03.jpg' | relative_url }}"></div>
+    
+</div>
+
